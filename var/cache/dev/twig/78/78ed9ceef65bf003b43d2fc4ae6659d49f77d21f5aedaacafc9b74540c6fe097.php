@@ -71,6 +71,6 @@ class __TwigTemplate_2016153933d5e12a8fc4f29c466074426ffd931451e329cce0a637f34ba
         <?php echo \$view['form']->widget(\$form); ?>
     </td>
 </tr>
-", "@Framework/FormTable/hidden_row.html.php", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/framework-bundle/Resources/views/FormTable/hidden_row.html.php");
+", "@Framework/FormTable/hidden_row.html.php", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/views/FormTable/hidden_row.html.php");
     }
 }

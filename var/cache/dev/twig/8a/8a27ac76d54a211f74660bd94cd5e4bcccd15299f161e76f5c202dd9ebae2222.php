@@ -75,6 +75,6 @@ class __TwigTemplate_4a22b95bee5f296e592a5debd9a52c60ae1638bcf870ae6d69edf869885
         return new Source("/*
 {{ include('@Twig/Exception/exception.txt.twig', { exception: exception }) }}
 */
-", "@Twig/Exception/exception.js.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/twig-bundle/Resources/views/Exception/exception.js.twig");
+", "@Twig/Exception/exception.js.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/exception.js.twig");
     }
 }

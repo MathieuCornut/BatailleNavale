@@ -135,6 +135,6 @@ class __TwigTemplate_424ba835414c4516a280263d66794d750e0758fbdf10744b8d9aea4ba01
 .exception-message-wrapper .container {
     min-height: auto;
 }
-", "@WebProfiler/Collector/exception.css.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
     }
 }

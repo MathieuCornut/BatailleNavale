@@ -69,6 +69,6 @@ class __TwigTemplate_4210dd1458b081048a01017dcd3735b4b22e4d514aec08ad19595735969
     ? strtr(\$label_format, ['%name%' => \$name, '%id%' => \$id])
     : \$view['form']->humanize(\$name); } ?>
 <button type=\"<?php echo isset(\$type) ? \$view->escape(\$type) : 'button' ?>\" <?php echo \$view['form']->block(\$form, 'button_attributes') ?>><?php echo \$view->escape(false !== \$translation_domain ? \$view['translator']->trans(\$label, \$label_translation_parameters, \$translation_domain) : \$label) ?></button>
-", "@Framework/Form/button_widget.html.php", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/framework-bundle/Resources/views/Form/button_widget.html.php");
+", "@Framework/Form/button_widget.html.php", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/views/Form/button_widget.html.php");
     }
 }

@@ -65,6 +65,6 @@ class __TwigTemplate_ce96008cfec857eb7290bac15930e6116252b57feea3a06f70889ab1d3a
     {
         return new Source("<?php \$symbol = false !== \$symbol ? (\$symbol ? ' '.\$symbol : ' %') : '' ?>
 <?php echo \$view['form']->block(\$form, 'form_widget_simple', ['type' => isset(\$type) ? \$type : 'text']).\$view->escape(\$symbol) ?>
-", "@Framework/Form/percent_widget.html.php", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
+", "@Framework/Form/percent_widget.html.php", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
     }
 }

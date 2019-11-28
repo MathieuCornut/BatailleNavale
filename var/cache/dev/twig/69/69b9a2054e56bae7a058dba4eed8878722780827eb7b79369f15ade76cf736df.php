@@ -63,6 +63,6 @@ class __TwigTemplate_3c10d3355e8227e389429e8f384c42e6c57f4cd924914798e85557e2a5a
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'button_widget', ['type' => isset(\$type) ? \$type : 'submit']) ?>
-", "@Framework/Form/submit_widget.html.php", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/framework-bundle/Resources/views/Form/submit_widget.html.php");
+", "@Framework/Form/submit_widget.html.php", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/views/Form/submit_widget.html.php");
     }
 }

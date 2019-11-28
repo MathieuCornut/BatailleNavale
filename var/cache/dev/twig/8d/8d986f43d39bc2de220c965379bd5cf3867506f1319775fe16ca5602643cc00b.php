@@ -95,6 +95,6 @@ class __TwigTemplate_31be6c70e43d12fae928f25380139bf0bb222122ceae761c29bc0e86b26
             </trace>
 {% endfor %}
         </traces>
-", "@Twig/Exception/traces.xml.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
+", "@Twig/Exception/traces.xml.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
     }
 }

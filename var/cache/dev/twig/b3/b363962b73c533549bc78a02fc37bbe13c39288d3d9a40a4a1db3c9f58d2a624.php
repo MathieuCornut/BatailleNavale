@@ -77,6 +77,6 @@ class __TwigTemplate_cb343fb48ce828823247f833dc87f18c1c16bda99b6719c8b1612123678
 <?php printf('%s=\"%s\" ', \$view->escape(\$k), \$view->escape(\$v)) ?>
 <?php endif ?>
 <?php endforeach ?>
-", "@Framework/Form/choice_attributes.html.php", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/framework-bundle/Resources/views/Form/choice_attributes.html.php");
+", "@Framework/Form/choice_attributes.html.php", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/views/Form/choice_attributes.html.php");
     }
 }

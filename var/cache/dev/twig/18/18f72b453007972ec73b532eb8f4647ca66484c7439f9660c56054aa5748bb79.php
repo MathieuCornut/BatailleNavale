@@ -81,6 +81,6 @@ class __TwigTemplate_cced4dff622f263538cf81d4b973ebcf73ddba34e1c4de2d04c5a50329f
     public function getSourceContext()
     {
         return new Source("{% block panel '' %}
-", "@WebProfiler/Profiler/ajax_layout.html.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
+", "@WebProfiler/Profiler/ajax_layout.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
     }
 }

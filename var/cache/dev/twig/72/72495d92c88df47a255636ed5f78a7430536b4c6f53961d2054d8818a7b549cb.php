@@ -417,6 +417,6 @@ class __TwigTemplate_1ca8325895bac811687720aec1f628ec302e6e06a80d8cb28f29a974e2d
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
     }
 }

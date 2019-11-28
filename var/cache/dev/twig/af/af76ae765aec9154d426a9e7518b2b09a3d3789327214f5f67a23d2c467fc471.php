@@ -79,6 +79,6 @@ class __TwigTemplate_c6d0a6004e2cacad687142203fdfca75270cba45d3dabbdbcab7976703c
         return new Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
     }
 }

@@ -171,6 +171,6 @@ class __TwigTemplate_c147cf6e9b14718e0fb9b8ec4254792cdca8eb832722dbe8ef944a8056e
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

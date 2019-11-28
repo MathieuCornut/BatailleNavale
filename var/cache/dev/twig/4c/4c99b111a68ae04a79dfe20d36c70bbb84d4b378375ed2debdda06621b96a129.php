@@ -79,6 +79,6 @@ class __TwigTemplate_e1ffa22c5223a69401b9aa69a31e26e545d66dcc74902ca4b33531a5f4d
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.js.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/twig-bundle/Resources/views/Exception/error.js.twig");
+", "@Twig/Exception/error.js.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/error.js.twig");
     }
 }

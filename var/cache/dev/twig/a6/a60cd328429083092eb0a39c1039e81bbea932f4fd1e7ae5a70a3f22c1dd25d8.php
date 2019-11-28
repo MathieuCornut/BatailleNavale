@@ -227,6 +227,6 @@ class __TwigTemplate_7e42eff94a9c154726d4b8cf54d597fd84184b2b8af9dc0d27253c18712
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+", "@Twig/layout.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }

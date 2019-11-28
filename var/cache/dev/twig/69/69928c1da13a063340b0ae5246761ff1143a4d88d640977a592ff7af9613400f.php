@@ -59,6 +59,6 @@ class __TwigTemplate_cdc6eab1f756fc490d664ba6b51716bc43e37fc634bcdbc0095a88a11b2
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/button_label.html.php", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
+        return new Source("", "@Framework/Form/button_label.html.php", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
     }
 }

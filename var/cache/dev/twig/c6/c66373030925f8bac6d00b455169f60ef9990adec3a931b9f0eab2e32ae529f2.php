@@ -174,6 +174,6 @@ class __TwigTemplate_0ed2c4e66cc51e2d9ad451d8403e5a276faa54e5fa638d13dbbe25a155d
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

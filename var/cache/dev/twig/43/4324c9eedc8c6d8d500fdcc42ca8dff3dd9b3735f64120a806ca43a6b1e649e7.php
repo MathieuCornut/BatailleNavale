@@ -56,15 +56,17 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 7
-        echo "    </head>
+        echo "        <link rel=\"stylesheet\" href=\"/css/css.css\">
+        <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">
+    </head>
     <body>
         ";
-        // line 9
+        // line 11
         $this->displayBlock('body', $context, $blocks);
-        // line 10
+        // line 12
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 11
+        // line 15
         echo "    </body>
 </html>
 ";
@@ -113,7 +115,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     }
 
-    // line 9
+    // line 11
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -131,7 +133,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     }
 
-    // line 10
+    // line 12
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -141,6 +143,9 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
+        // line 13
+        echo "        <script src=\"https://kit.fontawesome.com/5ae6b39f46.js\" crossorigin=\"anonymous\"></script>
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -156,7 +161,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     public function getDebugInfo()
     {
-        return array (  135 => 10,  117 => 9,  99 => 6,  80 => 5,  68 => 11,  65 => 10,  63 => 9,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  147 => 13,  137 => 12,  119 => 11,  101 => 6,  82 => 5,  70 => 15,  67 => 12,  65 => 11,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -167,12 +172,16 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <link rel=\"stylesheet\" href=\"/css/css.css\">
+        <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+        <script src=\"https://kit.fontawesome.com/5ae6b39f46.js\" crossorigin=\"anonymous\"></script>
+        {% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Users/mathieucornut/Documents/SymfoJeux/symJeux/templates/base.html.twig");
+", "base.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/base.html.twig");
     }
 }

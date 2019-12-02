@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des utilisateurs{% endblock %}
+
+{% block body %}
+<style>
+    nav { background: #919191; padding: 2px 6px; text-align: center;}
+    #title_area {text-align: left;}
+    #buttons_area {text-align: right;}
+</style>
+
+<div class="example-wrapper">
+    <h3>Liste des utilisateurs</h3>
+	{% for users in list %}
+        <p>
+            {{ users.id }} - 
+            <a href="{{ path("profile", {id: users.id}) }}">
+                {{ users.username }}
+            </a>
+        </p>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+.row {
+    margin: auto;
+    border: solid;
+}
+
+
+footer {
+    vertical-align: bottom;
+
+    width: 100%;
+    background-color: #c7d0d8;
+    text-align: center;
+
+    height: 50px;
+    padding : 1%;
+}
+
+footer span {
+    vertical-align: middle;
+}
+
+footer span:first-of-type {
+    float: left;
+}
+
+footer span:last-of-type {
+    float: right;
+}

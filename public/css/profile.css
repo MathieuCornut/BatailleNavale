@@ -1,0 +1,67 @@
+h2 {
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+    text-indent: 1%;
+}
+
+.profile_img { 
+    width: 100px; 
+}
+
+.stats {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.stats span {
+    width: 100%;
+    font-size: xx-large;
+    border-bottom: solid;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    width: 80%;
+}
+
+.stats p {
+    padding-top: 0.5%;
+    font-size: large;
+}
+
+#parties span {
+    border-color: blue;
+}
+
+#victoires span{
+    border-color: green;
+}
+
+#ratio span{
+    border-color: gold;
+}
+
+.classement {
+    border: solid 2px black;
+    border-radius: 10px;
+
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    padding: 0.5%;
+}
+
+.classement label {
+    text-align: center;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#classement_position a {
+    vertical-align: bottom;
+}

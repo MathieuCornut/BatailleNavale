@@ -28,9 +28,16 @@ class RegistrationController extends AbstractController
             $user->setPassword(
                 $passwordEncoder->encodePassword(
                     $user,
-                    $form->get('passwordConfirm')->getData()
+                    $form->get('password')->getData()
                 )
             );
+            $now = date_create(date('Y-m-d')); 
+
+            $user->setRole(['REGISTERED_USER']);
+
+            $user->setRegistrationDate($now);
+            $user->setCountCombat(0);
+            $user->setCountVictory(0);
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);

@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="example-wrapper"> 
+
+    {% if info == '' %}
+        {% if app.user is null %}
+            Vous devez vous connecter <a href="{{path("app_login")}}"></a>
+        {% else %}
+            {% set user = app.user %}
+        {% endif %}
+    {% else %}
+        {% if info.id == app.user.id %}
+            {% set user = app.user %}
+        {% else %}
+            {% set user = info %}
+        {% endif %}
+    {% endif %}
+
+    <h2><u>Votre profil</u></h2>
+    <div class="row">
+        <table>
+            <tr>
+                <th rowspan="4">
+                    <img src="/images/user.png" class="profile_img">
+                </th>
+                <th><p>{{ user.pseudo }}</p></th>
+            </tr>
+            <tr>
+                <td><p>Inscrit le {{ user.getRegistrationDate()|date("d/m/Y") }}</p></td>
+            </tr>
+            <tr>
+                <td><p>Dernière connexion le JJ/MM/AAAA</p></td>
+            </tr>
+            <tr>
+                <td><p>Grade</p></td>
+            </tr>
+        </table>
+    </div>
+
+    <h2><u>Statistiques/Classement</u></h2>
+    <h3><u>Statistiques</u></h3>
+    <div class="row">
+        <div id="parties" class="stats" classement ml-4>
+            <span>Parties</span>
+            <p>{{ user.countCombat }}</p>
+        </div>
+        <div id="victoires" class="stats" classement ml-4>
+            <span>Victoires</span>
+            <p>{{ user.countVictory }}</p>
+        </div>
+        <div id="ratio" class="stats" classement ml-4>
+            <span>% de victoires</span>
+            <p>{{ user.ratio(user.countCombat,user.countVictory) }}%</p>
+        </div>
+    </div>
+
+    <h3><u>Classement</u></h3>
+    <div class="row">
+        <div id="classement_top" class="classement ml-6">
+            <label>Top 5</label>
+            {% dump(ranking) %}
+
+            {% for player in ranking |slice(0, 5)%}
+                {% if player.id == user.id %}
+                    <p><b>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires </b><i>[{{player.id}}]</i></p>                    
+                {% else %}
+                    <p>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires <i>[{{player.id}}]</i></p>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div id="classement_position" class="classement ml-6">
+            <label>Votre position dans le classement</label>
+
+            <!--Recuperer la position dans le classement via l'index du tableau ranking-->
+            <p><b># TODO</b></p>
+            <a href="{{ path("ranking") }}">Tableau du classement</a>
+        </div>
+    </div>
+
+    <h2><u>Historique de partie</u></h2>
+    <div class="row">
+        <p>// TODO, Objet Combat, boucle for de tous les combat ou joueur 1 ou 2 = id du joueur</p>
+    </div>
+</div>
+{% endblock %}

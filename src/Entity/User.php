@@ -38,12 +38,27 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $passwordConfirm;
+    private $pseudo;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="date")
      */
-    private $pseudo;
+    private $registration_date;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $last_login;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $count_combat;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $count_victory;
 
     public function getId(): ?int
     {
@@ -123,18 +138,6 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    public function getPasswordConfirm(): ?string
-    {
-        return $this->passwordConfirm;
-    }
-
-    public function setPasswordConfirm(string $passwordConfirm): self
-    {
-        $this->passwordConfirm = $passwordConfirm;
-
-        return $this;
-    }
-
     public function getPseudo(): ?string
     {
         return $this->pseudo;
@@ -146,4 +149,63 @@ class User implements UserInterface
 
         return $this;
     }
+
+    public function getRegistrationDate(): ?\DateTimeInterface
+    {
+        return $this->registration_date;
+    }
+
+    public function setRegistrationDate(\DateTimeInterface $registration_date): self
+    {
+        $this->registration_date = $registration_date;
+
+        return $this;
+    }
+
+    public function getLastLogin(): ?\DateTimeInterface
+    {
+        return $this->last_login;
+    }
+
+    public function setLastLogin(?\DateTimeInterface $last_login): self
+    {
+        $this->last_login = $last_login;
+
+        return $this;
+    }
+
+    public function getCountCombat(): ?int
+    {
+        return $this->count_combat;
+    }
+
+    public function setCountCombat(int $count_combat): self
+    {
+        $this->count_combat = $count_combat;
+
+        return $this;
+    }
+
+    public function getCountVictory(): ?int
+    {
+        return $this->count_victory;
+    }
+
+    public function setCountVictory(?int $count_victory): self
+    {
+        $this->count_victory = $count_victory;
+
+        return $this;
+    }
+
+    public function getRatio(int $CountCombat, int $CountVictory) {
+        if($CountCombat == 0 OR $CountVictory == 0) {
+            return '0';
+        }
+        else {
+           $division = ($CountVictory/$CountCombat)*100;
+            return round($division,1);
+        }    
+    }
+        
 }

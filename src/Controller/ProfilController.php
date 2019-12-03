@@ -43,7 +43,6 @@ class ProfilController extends AbstractController
         $ranking = $stmt->fetchAll();
         
         return $this->render('profil/profile.html.twig', [
-            'info' => '',
             'ranking' => $ranking
         ]);
     }

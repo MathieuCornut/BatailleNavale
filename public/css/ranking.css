@@ -1,0 +1,23 @@
+.table tbody tr td {
+    font-size: larger;
+}
+
+.table tbody tr:first-child {
+    background-color: gold;
+    font-weight: bold;
+}
+
+.table tbody tr:first-child .num::before {
+    content: "🏆 ";
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.table tbody tr:nth-child(2) {
+    background-color: silver;
+    font-weight: bold;
+}
+
+.table tbody tr:nth-child(3) {
+    background-color: #cd7f32;
+    font-weight: bold;
+}

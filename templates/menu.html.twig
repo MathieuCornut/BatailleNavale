@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-static-top">
+    <div class="container">
+
+        <div class="collapse navbar-collapse text-center" id="welcome">
+            {% if app.user is null %}
+                <h1>Bienvenue à bord !</h1>
+            {% else %}
+                <h1>Bienvenue capitaine {{ app.user.pseudo }} !</h1>
+            {% endif %}
+        </div>
+
+        <div class="collapse navbar-collapse text-center" id="menu">
+            <ul class="navbar-nav mr-auto list-group-horizontal">
+                <li class="nav-item {% if app.request.get('_route') == 'rules' %}active{% endif %}">
+                    <h2>
+                        <a class="nav-link" href="{{ path('rules') }}">Règles</a>
+                    </h2>
+                </li>
+                {% if app.user is not null %}
+                    <li class="nav-item {% if app.request.get('_route') == 'self_profile' %}active{% endif %}">
+                        <h2>
+                            <a class="nav-link" href="{{ path('self_profile') }}">Profil</a>
+                        </h2>
+                    </li>
+
+                    <li class="nav-item {% if app.request.get('_route') == 'ranking' %}active{% endif %}">
+                        <h2>
+                            <a class="nav-link" href="{{ path('ranking') }}">Classement</a>
+                        </h2>
+                    </li>
+
+                    <li class="nav-item {% if app.request.get('_route') == 'game' %}active{% endif %}">
+                        <h2>
+                            <a class="nav-link" href="{{ path('game') }}">Jouer</a>
+                        </h2>
+                    </li>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class="nav-item {% if app.request.get('_route') == 'admin' %}active{% endif %}">
+                            <h2>
+                                <a class="nav-link" href="{{ path('admin') }}">Administration</a>
+                            </h2>
+                        </li>  
+                    {% endif %}
+                {% endif %}
+            </ul>
+        </div>
+
+        <div class="form-inline my-2 my-lg-0  text-center" id="boutons">
+            {% if app.user is null %}
+                <a class="btn btn-info ml-3" href="{{ path('app_login') }}">
+                    Se connecter
+                </a>
+                <a class="btn btn-info ml-3" href="{{ path('app_register') }}">
+                    S'inscrire
+                </a>
+            {% else %}
+                <a class="btn btn-info ml-3" href="{{ path('app_logout') }}">
+                    Se déconnecter
+                </a>
+            {% endif %}
+        </div>      
+    </div>
+</nav>

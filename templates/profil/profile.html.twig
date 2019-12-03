@@ -1,19 +1,19 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="example-wrapper"> 
+<div class="page-content"> 
 
-    {% if info == '' %}
-        {% if app.user is null %}
-            Vous devez vous connecter <a href="{{path("app_login")}}"></a>
-        {% else %}
-            {% set user = app.user %}
-        {% endif %}
-    {% else %}
+    {% if info is defined %}
         {% if info.id == app.user.id %}
             {% set user = app.user %}
         {% else %}
             {% set user = info %}
+        {% endif %}
+    {% else %}
+        {% if app.user is null %}
+            Vous devez vous connecter <a href="{{path("app_login")}}"></a>
+        {% else %}
+            {% set user = app.user %}
         {% endif %}
     {% endif %}
 
@@ -63,17 +63,15 @@
 
             {% for player in ranking |slice(0, 5)%}
                 {% if player.id == user.id %}
-                    <p><b>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires </b><i>[{{player.id}}]</i></p>                    
+                    <p><b>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires </b></p>                    
                 {% else %}
-                    <p>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires <i>[{{player.id}}]</i></p>
+                    <p>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires</p>
                 {% endif %}
             {% endfor %}
         </div>
         <div id="classement_position" class="classement ml-6">
             <label>Votre position dans le classement</label>
-
-            <!--Recuperer la position dans le classement via l'index du tableau ranking-->
-            <p><b># TODO</b></p>
+            <p id="position"><b>#{{ user.position(user,ranking) }}</b></p>
             <a href="{{ path("ranking") }}">Tableau du classement</a>
         </div>
     </div>

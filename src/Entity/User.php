@@ -207,5 +207,9 @@ class User implements UserInterface
             return round($division,1);
         }    
     }
+
+    public function getPosition($user,$ranking) {
+        return array_search($user->id, array_column($ranking,'id')) + 1;
+    }
         
 }

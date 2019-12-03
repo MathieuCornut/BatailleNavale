@@ -33,7 +33,7 @@ class RegistrationController extends AbstractController
             );
             $now = date_create(date('Y-m-d')); 
 
-            $user->setRole(['REGISTERED_USER']);
+            $user->setRoles(['USER']);
 
             $user->setRegistrationDate($now);
             $user->setCountCombat(0);

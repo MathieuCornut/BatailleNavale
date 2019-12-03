@@ -1,11 +1,39 @@
-.row {
-    margin: auto;
-    border: solid;
+nav {
+    height:             150px;
+    width:              100%;
+
+    background-color: #c7d0d8;
+    border-bottom: solid 5px #7b8084;
 }
 
+li {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.active {
+    opacity: 0.3;
+}
+
+#welcome {
+    text-align: left;
+}
+
+#boutons {
+    text-align: right;
+}
+
+#menu {
+    text-align: center;
+}
+
+/*** FOOTER ***/
 
 footer {
-    vertical-align: bottom;
+    display: none;
+
+    position: absolute;
+    bottom: 0;
 
     width: 100%;
     background-color: #c7d0d8;

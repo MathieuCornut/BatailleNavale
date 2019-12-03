@@ -1,18 +1,24 @@
-h2 {
+
+
+.profile_content h2 {
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    padding: 1%;
 }
 
-h3 {
-    text-indent: 1%;
+.profile_content h3 {
+    text-indent: 2%;
+
+    padding: 0.5%;
 }
 
 .profile_img { 
-    width: 100px; 
+    width: 100px;
 }
 
 .stats {
-    width: 100%;
+    width: 33%;
     display: inline-block;
     text-align: center;
 }
@@ -53,6 +59,10 @@ h3 {
     margin-right: 5%;
 
     padding: 0.5%;
+
+    text-align: center;
+
+    width: 40%;
 }
 
 .classement label {
@@ -62,6 +72,18 @@ h3 {
     font-weight: bold;
 }
 
+.classement #position {
+    text-align: center;
+
+    font-size: 5em;
+}
+
+.classement p {
+    text-align: left;
+}
+
 #classement_position a {
     vertical-align: bottom;
+
+    bottom: 0;
 }

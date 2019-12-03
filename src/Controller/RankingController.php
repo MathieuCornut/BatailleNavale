@@ -23,7 +23,7 @@ class RankingController extends AbstractController
         // returns an array of arrays (i.e. a raw data set)
         $ranking = $stmt->fetchAll();
 
-        return $this->render('ranking/index.html.twig', [
+        return $this->render('ranking/ranking.html.twig', [
             'ranking' => $ranking
         ]);
     }

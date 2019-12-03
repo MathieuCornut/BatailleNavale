@@ -2,6 +2,8 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
+
+    z-index: 0;
 }
 .card {
     margin-top: 10%;
@@ -12,9 +14,14 @@ body {
     background-image:url(/images/Galion.jpg);
     background-repeat:no-repeat;
     background-position:center center;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
     }
 
-div {
+div#content {
     background-color: white;
 }
+
+.page-content {
+    padding-top: 20%;
+} 

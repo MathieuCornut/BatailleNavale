@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+    z-index: 0;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card {
+    margin-top: 10%;
+}
+body {
+    color:black;
+    background-color:white;
+    background-image:url(/images/Galion.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
+div#content {
+    background-color: white;
+}
+
+.page-content {
+    padding-top: 20%;
+} 
+
+#access-denied {
+    width: 250px;
+}
+
+img.admin-actions {
+    width: 150px;
+}

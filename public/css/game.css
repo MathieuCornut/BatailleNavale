@@ -1,0 +1,67 @@
+.board {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+
+    border: solid blue;
+}
+
+.board-part {
+    width: 50%;
+
+    height: 500px;
+
+    display: inline-block;
+
+    margin: auto;
+    text-align: center;
+
+    border: solid red;
+}
+
+#you {
+    border-right: solid;
+}
+
+#opponent {
+    border-left: solid;
+}
+
+#opponent img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.board-part label {
+    font-size: larger;
+
+    text-transform: uppercase;
+}
+
+.boat-area {
+    width: 120px;
+
+    padding-bottom: 10px;
+    
+    border-bottom: solid 5px green;
+}
+
+.boat {
+    position: relative;
+
+    z-index : 1;
+
+    margin: auto;
+
+    display: block;
+
+    width: 100px;
+
+    padding-bottom: 10px;
+    
+    border-bottom: solid 5px green;
+}
+
+#opponent a.boat-area:link:hover img.boat {
+    background-color: red;
+}

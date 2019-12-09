@@ -72,6 +72,10 @@
     font-weight: bold;
 }
 
+.classement #classement-position {
+    background-color: cyan;
+}
+
 .classement #position {
     text-align: center;
 

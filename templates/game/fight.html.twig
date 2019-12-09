@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Combat !{% endblock %}
+
+{% block body %}
+
+{% dump(game) %}
+<div class="page-content">
+    <div class="row board">
+        <div id="you" class="board-part">
+            <label>{{app.user.pseudo}}</label>
+
+            {% for i in range(1, game.countBateauJ1) %}
+                <a class="boat-area">
+                    <img src={{asset('images/sprite.png')}} class="boat boat{{i}}">
+                    <p>{{game.hpJ1[i-1]}}</p>
+                </a>
+            {% endfor %}
+
+        </div>
+        <div id="opponent" class="board-part">
+            <label>{{game.joueur2}}</label>
+
+            {% for i in range(1, game.countBateauJ2) %}
+                <a {% if game.hpJ2[i-1] > 1 %} href="{{path("attack", {id: game.id, target: i})}}" {% endif %}class="boat-area">
+                    <img src=   {% if game.hpJ2[i-1] > 1 %}
+                                    {{asset('images/sprite.png')}}
+                                {% else %}
+                                    {{asset('images/dead_sprite.png')}}
+                                {% endif %} 
+                    class="boat boat{{i}}">
+                    <p>{{game.hpJ2[i-1]}}</p>
+                </a>
+            {% endfor %}
+        </div>
+        <div id="logs">
+            <ul>
+                {% for log in logs %}
+                    <li>{{log}}</li>
+                {% endfor %}
+            <ul>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}

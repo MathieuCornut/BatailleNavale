@@ -21,12 +21,14 @@
         </tr>
     </thead>
     <tbody>
+        {% dump(ranking) %}
         {% for player in ranking %}
         <tr>
             <td scope="col" class="num">{{loop.index}}</td>
             <td scope="col"><a href="{{ path("profile", {id: player.id}) }}">{{player.pseudo}}</a></td>
             <td scope="col">{{player.count_victory}}</td>
-            <td scope="col">Il y a [TODO]</td>
+
+            <td scope="col">Il y a {{ player.last_login }}</td>
         </tr>
         {% endfor %}
     </tbody>

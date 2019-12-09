@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestion des utilisateurs{% endblock %}
+
+{% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
+        <div class="page-content">
+            <h2>Gestion des utilisateurs</h2>
+            {% for user in users %}
+                <div class="row p-1">
+                    <p class="{{ user.roles }}"><a href="{{ path("edit_role", {id: user.id}) }}">{{ user.pseudo }}</a></p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="page-content" style="text-align: center;">
+            <img src="images/access-denied.png" id="access-denied">
+            <h2>Vous n'avez pas accès à cette page</h2>
+            <a href="{{ path("self_profile") }}">Retourner sur votre page</a>
+        </div>
+    {% endif %}
+
+{% endblock %}

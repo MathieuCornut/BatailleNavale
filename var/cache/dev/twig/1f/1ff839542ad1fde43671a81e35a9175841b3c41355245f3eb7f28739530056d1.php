@@ -86,8 +86,8 @@ class __TwigTemplate_0274a9e9def412319b137d8e60bdb1546e95a49a86a073e79aeeab31275
 
         // line 6
         echo "<div class=\"page-content\">
-    <div class=\"col-md-4\">
-        <div class=\"card bg-light\">
+    <div class=\"col-md-4\" id=\"BlockLogin\">
+        <div class=\"card bg-light\"id=\"Card-login\" >
             <div class=\"card-header\">
                 <h2 class=\"card-title\">
                     <i class=\"fas fa-lock\"></i>
@@ -141,7 +141,7 @@ class __TwigTemplate_0274a9e9def412319b137d8e60bdb1546e95a49a86a073e79aeeab31275
                     ";
         // line 46
         echo "
-                    <button class=\"btn btn-lg btn-primary mt-3\" type=\"submit\">
+                    <button class=\"btn btn-lg btn-danger mt-3\"id=\"Sub\" type=\"submit\">
                         Connexion
                     </button>
                     <a href=\"";
@@ -187,8 +187,8 @@ class __TwigTemplate_0274a9e9def412319b137d8e60bdb1546e95a49a86a073e79aeeab31275
 
 {% block body %}
 <div class=\"page-content\">
-    <div class=\"col-md-4\">
-        <div class=\"card bg-light\">
+    <div class=\"col-md-4\" id=\"BlockLogin\">
+        <div class=\"card bg-light\"id=\"Card-login\" >
             <div class=\"card-header\">
                 <h2 class=\"card-title\">
                     <i class=\"fas fa-lock\"></i>
@@ -227,7 +227,7 @@ class __TwigTemplate_0274a9e9def412319b137d8e60bdb1546e95a49a86a073e79aeeab31275
                         </div>
                     #}
 
-                    <button class=\"btn btn-lg btn-primary mt-3\" type=\"submit\">
+                    <button class=\"btn btn-lg btn-danger mt-3\"id=\"Sub\" type=\"submit\">
                         Connexion
                     </button>
                     <a href=\"{{ path('app_register') }}\" class=\"btn btn-link\">
@@ -239,6 +239,6 @@ class __TwigTemplate_0274a9e9def412319b137d8e60bdb1546e95a49a86a073e79aeeab31275
     </div>
 </div>
 {% endblock %}
-", "security/login.html.twig", "/var/www/html/batailleNavale/templates/security/login.html.twig");
+", "security/login.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/security/login.html.twig");
     }
 }

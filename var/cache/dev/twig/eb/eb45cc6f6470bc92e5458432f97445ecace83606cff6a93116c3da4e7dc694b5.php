@@ -1006,6 +1006,6 @@ class __TwigTemplate_626cb1569d49b9afbf4517463aa7d931a41f0ea9498dd239b141347e9a8
         {% endif %}
     {% endfor %}
 {% endblock %}
-", "@Swiftmailer/Collector/swiftmailer.html.twig", "/var/www/html/batailleNavale/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
+", "@Swiftmailer/Collector/swiftmailer.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
     }
 }

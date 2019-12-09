@@ -1828,6 +1828,6 @@ class __TwigTemplate_4d1eeca0e34d525210e036a2c2d5532ba775e0307a86fda975ecdd9fb8a
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/var/www/html/batailleNavale/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

@@ -85,12 +85,7 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<style>
-    th,td {
-        text-align: center;
-    }
-</style>
-
+        echo "
 <div class=\"page-content\">
     <h2>Classement</h2>
     <table class=\"table\">
@@ -104,9 +99,9 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
     </thead>
     <tbody>
         ";
-        // line 24
+        // line 19
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["ranking"]) || array_key_exists("ranking", $context) ? $context["ranking"] : (function () { throw new RuntimeError('Variable "ranking" does not exist.', 24, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["ranking"]) || array_key_exists("ranking", $context) ? $context["ranking"] : (function () { throw new RuntimeError('Variable "ranking" does not exist.', 19, $this->source); })()));
         $context['loop'] = [
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -121,21 +116,21 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["player"]) {
-            // line 25
+            // line 20
             echo "        <tr>
             <td scope=\"col\" class=\"num\">";
-            // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 26), "html", null, true);
+            // line 21
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 21), "html", null, true);
             echo "</td>
             <td scope=\"col\"><a href=\"";
-            // line 27
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("profile", ["id" => twig_get_attribute($this->env, $this->source, $context["player"], "id", [], "any", false, false, false, 27)]), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("profile", ["id" => twig_get_attribute($this->env, $this->source, $context["player"], "id", [], "any", false, false, false, 22)]), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "pseudo", [], "any", false, false, false, 27), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "pseudo", [], "any", false, false, false, 22), "html", null, true);
             echo "</a></td>
             <td scope=\"col\">";
-            // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "count_victory", [], "any", false, false, false, 28), "html", null, true);
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "count_victory", [], "any", false, false, false, 23), "html", null, true);
             echo "</td>
             <td scope=\"col\">Il y a [TODO]</td>
         </tr>
@@ -152,7 +147,7 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['player'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 27
         echo "    </tbody>
 </div>
 ";
@@ -176,7 +171,7 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
 
     public function getDebugInfo()
     {
-        return array (  156 => 32,  138 => 28,  132 => 27,  128 => 26,  125 => 25,  108 => 24,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  151 => 27,  133 => 23,  127 => 22,  123 => 21,  120 => 20,  103 => 19,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -186,11 +181,6 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
 {% block title %}Classement{% endblock %}
 
 {% block body %}
-<style>
-    th,td {
-        text-align: center;
-    }
-</style>
 
 <div class=\"page-content\">
     <h2>Classement</h2>
@@ -215,6 +205,6 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
     </tbody>
 </div>
 {% endblock %}
-", "ranking/ranking.html.twig", "/var/www/html/batailleNavale/templates/ranking/ranking.html.twig");
+", "ranking/ranking.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/ranking/ranking.html.twig");
     }
 }

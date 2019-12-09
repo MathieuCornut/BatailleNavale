@@ -356,6 +356,6 @@ class __TwigTemplate_1a1c91ad6aa4df8123a5a4f8d7ce72334da18787053da11c8a34934e25b
         <p>// TODO, Objet Combat, boucle for de tous les combat ou joueur 1 ou 2 = id du joueur</p>
     </div>
 </div>
-{% endblock %}", "profil/profile.html.twig", "/var/www/html/batailleNavale/templates/profil/profile.html.twig");
+{% endblock %}", "profil/profile.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/profil/profile.html.twig");
     }
 }

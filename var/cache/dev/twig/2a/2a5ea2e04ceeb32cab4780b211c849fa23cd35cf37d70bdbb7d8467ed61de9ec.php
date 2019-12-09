@@ -104,6 +104,6 @@ class __TwigTemplate_5a7833ed79b7db11a6d416fa1384faaa04294387e82b40b6576c4a1958d
   {{ include('@Twig/Exception/trace.txt.twig', { trace: trace }, with_context = false) }}
 {% endfor %}
 {% endif %}
-", "@Twig/Exception/traces.txt.twig", "/var/www/html/batailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
+", "@Twig/Exception/traces.txt.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
     }
 }

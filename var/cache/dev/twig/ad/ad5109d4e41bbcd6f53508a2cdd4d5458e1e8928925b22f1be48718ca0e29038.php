@@ -43,7 +43,7 @@ class __TwigTemplate_a5f7cf4ea0d8289aeda2bcf945acb247a2aa34550551e548cbd60fa4a99
         echo "<footer  class=\"page-footer\">
     <span>Bataille Navale</span>
     <span>Mentions légales</span>
-    <span>Hugo BILQUART & Mathieu Cornut - 2019</span>
+    <span>Hugo BILQUART & Mathieu CORNUT - 2019</span>
 </footer>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -68,7 +68,7 @@ class __TwigTemplate_a5f7cf4ea0d8289aeda2bcf945acb247a2aa34550551e548cbd60fa4a99
         return new Source("<footer  class=\"page-footer\">
     <span>Bataille Navale</span>
     <span>Mentions légales</span>
-    <span>Hugo BILQUART & Mathieu Cornut - 2019</span>
-</footer>", "footer.html.twig", "/var/www/html/batailleNavale/templates/footer.html.twig");
+    <span>Hugo BILQUART & Mathieu CORNUT - 2019</span>
+</footer>", "footer.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/footer.html.twig");
     }
 }

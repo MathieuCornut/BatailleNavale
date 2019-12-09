@@ -160,6 +160,6 @@ class __TwigTemplate_1376a59ad0c1b57a00e8dbc3dc7c4062bbf43e0a7d81ec3bc3e9727a11b
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: profiler_url, name: 'time', status: status_color }) }}
 {% endblock %}
-", "@WebProfiler/Collector/memory.html.twig", "/var/www/html/batailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
+", "@WebProfiler/Collector/memory.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
     }
 }

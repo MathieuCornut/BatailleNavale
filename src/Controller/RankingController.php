@@ -4,26 +4,21 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\User;
+use App\Repository\UserRepository;
 use App\Service\UserFunction;
+
+
 
 class RankingController extends AbstractController
 {
     /**
      * @Route("/ranking", name="ranking")
      */
-    public function index(UserFunction $service)
+    public function index(UserFunction $service, UserRepository $userRepository)
     {
-        $conn = $this->getDoctrine()->getManager()->getConnection();
-
-        //On demande tous les utilisateurs classés par nombre de victoires
-        $sql = '
-            SELECT id,pseudo,count_victory,last_login FROM user u
-            ORDER BY u.count_victory DESC
-            ';
-        $stmt = $conn->query($sql);
-
-        //On mets le classement dans un tableau
-        $ranking = $stmt->fetchAll();
+        //On récupère le classement par nombre de victoire
+        $ranking = $userRepository->getRanking();
 
         //On formate la date de dernière connexion en "il y a X TEMPS"
         for($i = 0; $i < count($ranking) ; $i++) {

@@ -54,17 +54,7 @@ class Combat
     /**
      * @ORM\Column(type="integer")
      */
-    private $Statut;
-
-    /**
-     * @ORM\Column(type="array")
-     */
-    private $hpJ1 = [];
-
-    /**
-     * @ORM\Column(type="array")
-     */
-    private $hpJ2 = [];
+    private $Status;
 
     public function getId(): ?int
     {
@@ -155,38 +145,14 @@ class Combat
         return $this;
     }
 
-    public function getStatut(): ?int
+    public function getStatus(): ?int
     {
-        return $this->Statut;
+        return $this->Status;
     }
 
-    public function setStatut(int $Statut): self
+    public function setStatus(int $Status): self
     {
-        $this->Statut = $Statut;
-
-        return $this;
-    }
-
-    public function getHpJ1(): ?array
-    {
-        return $this->hpJ1;
-    }
-
-    public function setHpJ1(array $hpJ1): self
-    {
-        $this->hpJ1 = $hpJ1;
-
-        return $this;
-    }
-
-    public function getHpJ2(): ?array
-    {
-        return $this->hpJ2;
-    }
-
-    public function setHpJ2(array $hpJ2): self
-    {
-        $this->hpJ2 = $hpJ2;
+        $this->Status = $Status;
 
         return $this;
     }

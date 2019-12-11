@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fin de la partie !{% endblock %}
+
+{% block body %}
+
+<div class="page-content">
+
+    {% if game.vainqueur == app.user.pseudo %}
+        <h2>GG !</h2>
+        <a href="{{path("self_profile")}}">Retour sur votre profil</a>
+    {% else %}
+        <h2>Loser !</h2>
+        <a href="{{path("self_profile")}}">Retour sur votre profil</a>
+    {% endif %}
+</div>
+
+{% endblock %}

@@ -450,6 +450,10 @@
     <service id="App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
+    <service id="App\Repository\BoatRepository" class="App\Repository\BoatRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="App\Repository\CombatRepository" class="App\Repository\CombatRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
@@ -464,6 +468,7 @@
       <argument type="service" id="security.csrf.token_manager"/>
       <argument type="service" id="security.user_password_encoder.generic"/>
     </service>
+    <service id="App\Service\GameFunctions" class="App\Service\GameFunctions" autowire="true" autoconfigure="true"/>
     <service id="App\Service\UserFunction" class="App\Service\UserFunction" autowire="true" autoconfigure="true"/>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -2209,14 +2214,6 @@
         <argument>2048</argument>
       </call>
       <call method="addListener">
-        <argument>console.command</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
         <argument>kernel.exception</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
@@ -3022,7 +3019,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator.4xYQJYS"/>
+      <argument type="service" id=".service_locator.GrOI6Le"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -4811,6 +4808,8 @@
     <service id=".abstract.instanceof.App\Form\ConnexionType" class="App\Form\ConnexionType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\BoatRepository" class="App\Repository\BoatRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\BoatRepository" class="App\Repository\BoatRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CombatRepository" class="App\Repository\CombatRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\CombatRepository" class="App\Repository\CombatRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
@@ -4995,25 +4994,29 @@
         <argument key="manager" type="service" id="doctrine.orm.default_entity_manager"/>
       </argument>
     </service>
-    <service id=".service_locator.IyYPMgi" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.53_YPjN" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="game" type="service" id=".errored..service_locator.IyYPMgi.App\Entity\Combat"/>
+        <argument key="boatRepository" type="service" id="App\Repository\BoatRepository"/>
+        <argument key="game" type="service" id=".errored..service_locator.53_YPjN.App\Entity\Combat"/>
+        <argument key="gameFunctions" type="service" id="App\Service\GameFunctions"/>
         <argument key="userFunction" type="service" id="App\Service\UserFunction"/>
       </argument>
     </service>
-    <service id=".service_locator.I3PQGCb" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.MzJN91O" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="game" type="service" id=".errored..service_locator.I3PQGCb.App\Entity\Combat"/>
+        <argument key="game" type="service" id=".errored..service_locator.MzJN91O.App\Entity\Combat"/>
+        <argument key="gameFunctions" type="service" id="App\Service\GameFunctions"/>
         <argument key="manager" type="service" id="doctrine.orm.default_entity_manager"/>
-        <argument key="userFunction" type="service" id="App\Service\UserFunction"/>
+        <argument key="target" type="service" id=".errored..service_locator.MzJN91O.App\Entity\Boat"/>
       </argument>
     </service>
-    <service id=".service_locator.zkflNw6" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.PAMpUhx" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="service" type="service" id="App\Service\UserFunction"/>
+        <argument key="userRepository" type="service" id="App\Repository\UserRepository"/>
       </argument>
     </service>
     <service id=".service_locator.mkz8yKg" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -5030,25 +5033,25 @@
         <argument key="authenticationUtils" type="service" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.84zm59L" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.zrGtrkU" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\AdminController::admin_editRole" type="service" id=".service_locator.wypGnUQ"/>
         <argument key="App\Controller\AdminController::admin_users" type="service" id=".service_locator.JkextnA"/>
-        <argument key="App\Controller\GameController::attaque" type="service" id=".service_locator.I3PQGCb"/>
-        <argument key="App\Controller\GameController::fight" type="service" id=".service_locator.IyYPMgi"/>
+        <argument key="App\Controller\GameController::attaque" type="service" id=".service_locator.MzJN91O"/>
+        <argument key="App\Controller\GameController::fight" type="service" id=".service_locator.53_YPjN"/>
         <argument key="App\Controller\GameController::start" type="service" id=".service_locator.Txvqv4R"/>
         <argument key="App\Controller\ProfilController::profile" type="service" id=".service_locator.wypGnUQ"/>
-        <argument key="App\Controller\RankingController::index" type="service" id=".service_locator.zkflNw6"/>
+        <argument key="App\Controller\RankingController::index" type="service" id=".service_locator.PAMpUhx"/>
         <argument key="App\Controller\RegistrationController::register" type="service" id=".service_locator.mkz8yKg"/>
         <argument key="App\Controller\SecurityController::login" type="service" id=".service_locator.EbLunuf"/>
         <argument key="App\Controller\AdminController:admin_editRole" type="service" id=".service_locator.wypGnUQ"/>
         <argument key="App\Controller\AdminController:admin_users" type="service" id=".service_locator.JkextnA"/>
-        <argument key="App\Controller\GameController:attaque" type="service" id=".service_locator.I3PQGCb"/>
-        <argument key="App\Controller\GameController:fight" type="service" id=".service_locator.IyYPMgi"/>
+        <argument key="App\Controller\GameController:attaque" type="service" id=".service_locator.MzJN91O"/>
+        <argument key="App\Controller\GameController:fight" type="service" id=".service_locator.53_YPjN"/>
         <argument key="App\Controller\GameController:start" type="service" id=".service_locator.Txvqv4R"/>
         <argument key="App\Controller\ProfilController:profile" type="service" id=".service_locator.wypGnUQ"/>
-        <argument key="App\Controller\RankingController:index" type="service" id=".service_locator.zkflNw6"/>
+        <argument key="App\Controller\RankingController:index" type="service" id=".service_locator.PAMpUhx"/>
         <argument key="App\Controller\RegistrationController:register" type="service" id=".service_locator.mkz8yKg"/>
         <argument key="App\Controller\SecurityController:login" type="service" id=".service_locator.EbLunuf"/>
       </argument>
@@ -5131,9 +5134,10 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
-    <service id=".service_locator.4xYQJYS" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.GrOI6Le" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Repository\BoatRepository" type="service" id="App\Repository\BoatRepository"/>
         <argument key="App\Repository\CombatRepository" type="service" id="App\Repository\CombatRepository"/>
         <argument key="App\Repository\UserRepository" type="service" id="App\Repository\UserRepository"/>
       </argument>
@@ -5469,12 +5473,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.84zm59L"/>
+      <argument type="service" id=".service_locator.zrGtrkU"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.84zm59L"/>
+      <argument type="service" id=".service_locator.zrGtrkU"/>
     </service>
     <service id=".service_locator.UwRI0uT" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
@@ -5499,8 +5503,9 @@
       </argument>
     </service>
     <service id=".errored..service_locator.wypGnUQ.App\Entity\User" class="App\Entity\User"/>
-    <service id=".errored..service_locator.IyYPMgi.App\Entity\Combat" class="App\Entity\Combat"/>
-    <service id=".errored..service_locator.I3PQGCb.App\Entity\Combat" class="App\Entity\Combat"/>
+    <service id=".errored..service_locator.53_YPjN.App\Entity\Combat" class="App\Entity\Combat"/>
+    <service id=".errored..service_locator.MzJN91O.App\Entity\Combat" class="App\Entity\Combat"/>
+    <service id=".errored..service_locator.MzJN91O.App\Entity\Boat" class="App\Entity\Boat"/>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <argument type="service" id=".service_locator.hqQLbg_"/>
       <argument type="collection">
@@ -5883,7 +5888,7 @@
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger" public="false"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupCollectionInterface" alias="webpack_encore.entrypoint_lookup_collection" public="false"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.84zm59L"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.zrGtrkU"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>

@@ -5,6 +5,7 @@
 body {
     position: relative;
     color:black;
+    background-color: rgba(0, 0, 0, 0.5);
     background-image:url(/images/Galion.jpg);
     background-repeat:no-repeat;
     background-position:center center;
@@ -23,6 +24,18 @@ body {
     width: 100%;
     display: block;
     align-items: center;  
+}
+
+#content {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-content {
+    padding: 2%;
+    width: 80%;
+    margin: auto;
+
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 

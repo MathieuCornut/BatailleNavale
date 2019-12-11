@@ -149,12 +149,12 @@ class __TwigTemplate_d40b76a848ed59c7a5e125e6f48b6db7c52a51b6ac900004f34e9a7f997
         // line 49
         if ((null === twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "user", [], "any", false, false, false, 49))) {
             // line 50
-            echo "                <a class=\"btn btn-info ml-3\" href=\"";
+            echo "                <a class=\"btn btn-danger ml-3\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">
                     Se connecter
                 </a>
-                <a class=\"btn btn-info ml-3\" href=\"";
+                <a class=\"btn btn-danger ml-3\" href=\"";
             // line 53
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
             echo "\">
@@ -163,7 +163,7 @@ class __TwigTemplate_d40b76a848ed59c7a5e125e6f48b6db7c52a51b6ac900004f34e9a7f997
             ";
         } else {
             // line 57
-            echo "                <a class=\"btn btn-info ml-3\" href=\"";
+            echo "                <a class=\"btn btn-danger ml-3\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">
                     Se déconnecter
@@ -248,19 +248,19 @@ class __TwigTemplate_d40b76a848ed59c7a5e125e6f48b6db7c52a51b6ac900004f34e9a7f997
 
         <div class=\"form-inline my-2 my-lg-0  text-center\" id=\"boutons\">
             {% if app.user is null %}
-                <a class=\"btn btn-info ml-3\" href=\"{{ path('app_login') }}\">
+                <a class=\"btn btn-danger ml-3\" href=\"{{ path('app_login') }}\">
                     Se connecter
                 </a>
-                <a class=\"btn btn-info ml-3\" href=\"{{ path('app_register') }}\">
+                <a class=\"btn btn-danger ml-3\" href=\"{{ path('app_register') }}\">
                     S'inscrire
                 </a>
             {% else %}
-                <a class=\"btn btn-info ml-3\" href=\"{{ path('app_logout') }}\">
+                <a class=\"btn btn-danger ml-3\" href=\"{{ path('app_logout') }}\">
                     Se déconnecter
                 </a>
             {% endif %}
         </div>      
     </div>
-</nav>", "menu.html.twig", "/var/www/html/batailleNavale/templates/menu.html.twig");
+</nav>", "menu.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/menu.html.twig");
     }
 }

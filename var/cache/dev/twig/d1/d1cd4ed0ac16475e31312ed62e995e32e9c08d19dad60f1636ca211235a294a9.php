@@ -222,6 +222,6 @@ class __TwigTemplate_25de008b1155a5572aa50ed69993fbea190ee7dccc6339926cbe02ebc28
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/var/www/html/batailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }

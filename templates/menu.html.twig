@@ -47,14 +47,14 @@
 
         <div class="form-inline my-2 my-lg-0  text-center" id="boutons">
             {% if app.user is null %}
-                <a class="btn btn-info ml-3" href="{{ path('app_login') }}">
+                <a class="btn btn-danger ml-3" href="{{ path('app_login') }}">
                     Se connecter
                 </a>
-                <a class="btn btn-info ml-3" href="{{ path('app_register') }}">
+                <a class="btn btn-danger ml-3" href="{{ path('app_register') }}">
                     S'inscrire
                 </a>
             {% else %}
-                <a class="btn btn-info ml-3" href="{{ path('app_logout') }}">
+                <a class="btn btn-danger ml-3" href="{{ path('app_logout') }}">
                     Se déconnecter
                 </a>
             {% endif %}

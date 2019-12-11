@@ -57,31 +57,29 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 7
         echo "        <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">
-
-        <link rel=\"stylesheet\" href=\"/css/css.css\">
         <link rel=\"stylesheet\" href=\"/css/main.css\">
         <link rel=\"stylesheet\" href=\"/css/profile.css\">
         <link rel=\"stylesheet\" href=\"/css/ranking.css\">
     </head>
     <body>
         ";
-        // line 15
+        // line 13
         echo twig_include($this->env, $context, "menu.html.twig");
         echo "
         <div class=\"container-fluid\" id=\"content\">
             ";
-        // line 17
+        // line 15
         $this->displayBlock('body', $context, $blocks);
-        // line 18
+        // line 16
         echo "            ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 21
+        // line 19
         echo "        </div>
-        ";
-        // line 22
+    </body>
+    ";
+        // line 21
         echo twig_include($this->env, $context, "footer.html.twig");
         echo "
-    </body>
 </html>
 ";
         
@@ -129,7 +127,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     }
 
-    // line 17
+    // line 15
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -147,7 +145,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     }
 
-    // line 18
+    // line 16
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -157,7 +155,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 19
+        // line 17
         echo "            <script src=\"https://kit.fontawesome.com/5ae6b39f46.js\" crossorigin=\"anonymous\"></script>
             ";
         
@@ -180,7 +178,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     public function getDebugInfo()
     {
-        return array (  161 => 19,  151 => 18,  133 => 17,  115 => 6,  96 => 5,  82 => 22,  79 => 21,  76 => 18,  74 => 17,  69 => 15,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  159 => 17,  149 => 16,  131 => 15,  113 => 6,  94 => 5,  81 => 21,  77 => 19,  74 => 16,  72 => 15,  67 => 13,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -192,8 +190,6 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         <title>{% block title %}Projet Browsergame{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">
-
-        <link rel=\"stylesheet\" href=\"/css/css.css\">
         <link rel=\"stylesheet\" href=\"/css/main.css\">
         <link rel=\"stylesheet\" href=\"/css/profile.css\">
         <link rel=\"stylesheet\" href=\"/css/ranking.css\">
@@ -206,9 +202,9 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
             <script src=\"https://kit.fontawesome.com/5ae6b39f46.js\" crossorigin=\"anonymous\"></script>
             {% endblock %}
         </div>
-        {{ include('footer.html.twig') }}
     </body>
+    {{ include('footer.html.twig') }}
 </html>
-", "base.html.twig", "/var/www/html/batailleNavale/templates/base.html.twig");
+", "base.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/base.html.twig");
     }
 }

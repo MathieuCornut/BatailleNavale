@@ -105,15 +105,15 @@ class __TwigTemplate_c02ed38a015f0aff9e74b1bacda258a2b8f570a64d4d2aa386530be259d
 
         // line 7
         echo "<div class=\"page-content\">
-    <div class=\"col-md-4\">
-        <div class=\"card bg-light\">
+    <div class=\"col-md-4 \"id=\"BlockRegist\">
+        <div class=\"card bg-light\" id=\"Card-Regist\">
             <div class=\"card-header\">
                 <h2 class=\"card-title\">
                     <i class=\"fas fa-lock\"></i>
                     Inscrivez-vous!!!
                 </h2>
             </div>
-            <div class=\"card-body\">
+            <div class=\"card-body\" id= \"CB\">
                 
                 ";
         // line 18
@@ -132,7 +132,7 @@ class __TwigTemplate_c02ed38a015f0aff9e74b1bacda258a2b8f570a64d4d2aa386530be259d
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 21, $this->source); })()), "password", [], "any", false, false, false, 21), 'row');
         echo "
 
-                <button type=\"submit\" class=\"btn btn-primary\">
+                <button type=\"submit\" class=\"btn btn-danger\">
                     <i class=\"fas fa-lock-open\"></i>
                         Connexion !
                 </button>
@@ -184,22 +184,22 @@ class __TwigTemplate_c02ed38a015f0aff9e74b1bacda258a2b8f570a64d4d2aa386530be259d
 
 {% block body %}
 <div class=\"page-content\">
-    <div class=\"col-md-4\">
-        <div class=\"card bg-light\">
+    <div class=\"col-md-4 \"id=\"BlockRegist\">
+        <div class=\"card bg-light\" id=\"Card-Regist\">
             <div class=\"card-header\">
                 <h2 class=\"card-title\">
                     <i class=\"fas fa-lock\"></i>
                     Inscrivez-vous!!!
                 </h2>
             </div>
-            <div class=\"card-body\">
+            <div class=\"card-body\" id= \"CB\">
                 
                 {{ form_start(registrationForm) }}
                 {{ form_row(registrationForm.pseudo) }}
                 {{ form_row(registrationForm.email) }}
                 {{ form_row(registrationForm.password) }}
 
-                <button type=\"submit\" class=\"btn btn-primary\">
+                <button type=\"submit\" class=\"btn btn-danger\">
                     <i class=\"fas fa-lock-open\"></i>
                         Connexion !
                 </button>
@@ -213,6 +213,6 @@ class __TwigTemplate_c02ed38a015f0aff9e74b1bacda258a2b8f570a64d4d2aa386530be259d
     </div>
 </div>
 {% endblock %}
-", "registration/register.html.twig", "/var/www/html/batailleNavale/templates/registration/register.html.twig");
+", "registration/register.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/registration/register.html.twig");
     }
 }

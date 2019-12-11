@@ -1,56 +1,110 @@
-nav {
-    height:             150px;
-    width:              100%;
+/***************************************************************************************
+********************************* Global ***********************************************
+****************************************************************************************/
 
-    background-color: #c7d0d8;
-    border-bottom: solid 5px #7b8084;
+body {
+    position: relative;
+    color:black;
+    background-image:url(/images/Galion.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: 0;
+    color: rgb(7, 29, 70);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+#BlockLogin{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top:50px;
+    width: 100%;
+    display: block;
+    align-items: center;  
+}
+
+
+/***************************************************************************************
+********************************* CARD LOGIN *******************************************
+****************************************************************************************/
+
+#Card-login{
+    background-image:url(/images/9.jpg);
+    color: gold;
+}
+
+
+
+/***************************************************************************************
+********************************* CARD REGISTRATION ************************************
+****************************************************************************************/
+
+#Card-Regist{
+    background-image:url(/images/9.jpg);
+    color: gold;
+}
+
+#BlockRegist{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top:50px;
+    width: 100%;
+    display: block;      
+}
+
+#CB{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: auto;
+}
+
+/***************************************************************************************
+********************************* FOOTER ***********************************************
+****************************************************************************************/
+
+ .page-footer {
+    position: fixed; /* a voir */
+    z-index: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: gold;
+    font-size: 15px;
+    width: 100%;
+    height: 30px; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    background-image:url(/images/9.jpg);
+    display: flex;
+    justify-content: space-around;
+} 
+
+/***************************************************************************************
+********************************* HEADER ***********************************************
+****************************************************************************************/
+
+ nav {
+    height:             90px;
+    width:              100%;
+    background-image:url(/images/9.jpg);
+    border-bottom: solid 5px #7b8084;
+    color: gold;
+}
 li {
     margin-left: 2%;
     margin-right: 2%;
 }
-
 .active {
     opacity: 0.3;
 }
-
 #welcome {
     text-align: left;
 }
-
 #boutons {
     text-align: right;
 }
-
 #menu {
     text-align: center;
-}
-
-/*** FOOTER ***/
-
-footer {
-    display: none;
-
-    position: absolute;
-    bottom: 0;
-
-    width: 100%;
-    background-color: #c7d0d8;
-    text-align: center;
-
-    height: 50px;
-    padding : 1%;
-}
-
-footer span {
-    vertical-align: middle;
-}
-
-footer span:first-of-type {
-    float: left;
-}
-
-footer span:last-of-type {
-    float: right;
-}
+} 

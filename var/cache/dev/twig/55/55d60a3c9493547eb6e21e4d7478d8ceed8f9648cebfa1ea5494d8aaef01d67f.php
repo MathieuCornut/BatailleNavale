@@ -898,6 +898,6 @@ class __TwigTemplate_760ea1633f14089fd47842cd509b8d5670863fbb743b9f9174ed1840679
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/var/www/html/batailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

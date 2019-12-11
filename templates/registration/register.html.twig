@@ -5,22 +5,22 @@
 
 {% block body %}
 <div class="page-content">
-    <div class="col-md-4">
-        <div class="card bg-light">
+    <div class="col-md-4 "id="BlockRegist">
+        <div class="card bg-light" id="Card-Regist">
             <div class="card-header">
                 <h2 class="card-title">
                     <i class="fas fa-lock"></i>
                     Inscrivez-vous!!!
                 </h2>
             </div>
-            <div class="card-body">
+            <div class="card-body" id= "CB">
                 
                 {{ form_start(registrationForm) }}
                 {{ form_row(registrationForm.pseudo) }}
                 {{ form_row(registrationForm.email) }}
                 {{ form_row(registrationForm.password) }}
 
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-danger">
                     <i class="fas fa-lock-open"></i>
                         Connexion !
                 </button>

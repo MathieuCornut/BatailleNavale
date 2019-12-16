@@ -21,7 +21,6 @@ return [
         '/rules' => [[['_route' => 'rules', '_controller' => 'App\\Controller\\HomeController::rules'], null, null, null, false, false, null]],
         '/users' => [[['_route' => 'users', '_controller' => 'App\\Controller\\ProfilController::users'], null, null, null, false, false, null]],
         '/profile' => [[['_route' => 'self_profile', '_controller' => 'App\\Controller\\ProfilController::self_profile'], null, null, null, false, false, null]],
-        '/ranking' => [[['_route' => 'ranking', '_controller' => 'App\\Controller\\RankingController::index'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
@@ -49,6 +48,7 @@ return [
                     .'|/attaque/([^/]++)(*:239)'
                 .')'
                 .'|/profile/([^/]++)(*:265)'
+                .'|/ranking(?:/(\\d+))?(*:292)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -62,8 +62,9 @@ return [
         189 => [[['_route' => 'edit_role', '_controller' => 'App\\Controller\\AdminController::admin_editRole'], ['id'], null, null, false, true, null]],
         214 => [[['_route' => 'fight', '_controller' => 'App\\Controller\\GameController::fight'], ['id'], null, null, false, true, null]],
         239 => [[['_route' => 'attack', '_controller' => 'App\\Controller\\GameController::attaque'], ['id', 'target'], null, null, false, true, null]],
-        265 => [
-            [['_route' => 'profile', '_controller' => 'App\\Controller\\ProfilController::profile'], ['id'], null, null, false, true, null],
+        265 => [[['_route' => 'profile', '_controller' => 'App\\Controller\\ProfilController::profile'], ['id'], null, null, false, true, null]],
+        292 => [
+            [['_route' => 'ranking', 'page' => '1', '_controller' => 'App\\Controller\\RankingController::pagi'], ['page'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

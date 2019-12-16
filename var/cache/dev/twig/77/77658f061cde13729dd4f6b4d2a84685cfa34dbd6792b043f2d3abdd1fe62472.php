@@ -176,6 +176,6 @@ class __TwigTemplate_04969ac19d61e6b6b0486618cc5f059209db5e428774741bb33643c451b
         </div>
     {% endif %}
 
-{% endblock %}", "admin/users.html.twig", "/var/www/html/batailleNavale/templates/admin/users.html.twig");
+{% endblock %}", "admin/users.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/admin/users.html.twig");
     }
 }

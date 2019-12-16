@@ -20,16 +20,14 @@ class UserRepository extends ServiceEntityRepository
         parent::__construct($registry, User::class);
     }
 
-    public function getRanking()
-    {
+    public function getPagi(){
         return $this->createQueryBuilder('u')
-            ->select('u.id, u.pseudo,u.count_victory,u.last_login')
+            ->select('u.id, u.pseudo, u.count_victory,u.last_login')
             ->orderBy('u.count_victory', 'DESC')
             ->getQuery()
             ->getResult()
         ;
     }
-
     /*public function getRanking() {
         $conn = $this->getDoctrine()->getManager()->getConnection();
 

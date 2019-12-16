@@ -34,7 +34,6 @@ body {
     padding: 2%;
     width: 80%;
     margin: auto;
-
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -107,7 +106,7 @@ body {
     display: flex;
     justify-content: space-around;
 }
-li {
+.nav-item {
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -130,4 +129,13 @@ li {
 
 img.admin-actions {
     width: 150px;
+}
+
+/***************************************************************************************
+********************************* PAGINATION *******************************************
+****************************************************************************************/
+
+.pagi{
+    display: flex;
+    justify-content: center;
 }

@@ -48,12 +48,12 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="datetime", nullable=true)
      */
-    private $last_login;
+    public $last_login;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $count_combat;
+    public $count_combat;
 
     /**
      * @ORM\Column(type="integer", nullable=true)

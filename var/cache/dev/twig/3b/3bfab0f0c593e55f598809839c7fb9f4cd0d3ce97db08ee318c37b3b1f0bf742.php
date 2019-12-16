@@ -279,6 +279,6 @@ class __TwigTemplate_c76f908c159e7eb8ad3807a800492fe10ddb4f71524da02a43bc2bcebbb
     </div>
 </div>
 
-{% endblock %}", "game/fight.html.twig", "/var/www/html/batailleNavale/templates/game/fight.html.twig");
+{% endblock %}", "game/fight.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/game/fight.html.twig");
     }
 }

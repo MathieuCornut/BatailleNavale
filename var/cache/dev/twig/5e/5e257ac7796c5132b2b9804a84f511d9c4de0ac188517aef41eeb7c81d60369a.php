@@ -213,6 +213,6 @@ class __TwigTemplate_742836f352e6230c7423901fd036aeef06db10cdd1741daf58a9c897d2a
     </div>
 </div>
 {% endblock %}
-", "registration/register.html.twig", "/var/www/html/batailleNavale/templates/registration/register.html.twig");
+", "registration/register.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/registration/register.html.twig");
     }
 }

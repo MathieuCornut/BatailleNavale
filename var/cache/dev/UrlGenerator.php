@@ -27,7 +27,7 @@ return [
     'users' => [[], ['_controller' => 'App\\Controller\\ProfilController::users'], [], [['text', '/users']], [], []],
     'self_profile' => [[], ['_controller' => 'App\\Controller\\ProfilController::self_profile'], [], [['text', '/profile']], [], []],
     'profile' => [['id'], ['_controller' => 'App\\Controller\\ProfilController::profile'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/profile']], [], []],
-    'ranking' => [[], ['_controller' => 'App\\Controller\\RankingController::index'], [], [['text', '/ranking']], [], []],
+    'ranking' => [['page'], ['page' => '1', '_controller' => 'App\\Controller\\RankingController::pagi'], ['page' => '\\d+'], [['variable', '/', '\\d+', 'page', true], ['text', '/ranking']], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],

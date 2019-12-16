@@ -12,21 +12,37 @@ use App\Service\UserFunction;
 
 class RankingController extends AbstractController
 {
+     
     /**
-     * @Route("/ranking", name="ranking")
+     * @Route("/ranking/{page<\d+>?1}", name="ranking")
      */
-    public function index(UserFunction $service, UserRepository $userRepository)
+    public function pagi(UserFunction $service, UserRepository $userRepository, $page)
     {
-        //On récupère le classement par nombre de victoire
-        $ranking = $userRepository->getRanking();
+        $_rank = $userRepository->getPagi();
 
-        //On formate la date de dernière connexion en "il y a X TEMPS"
-        for($i = 0; $i < count($ranking) ; $i++) {
-            $ranking[$i]['last_login'] = $service->getLastLoginStr($ranking[$i]['last_login']);
+        $limit = 10;
+        $start = $page * $limit - $limit;
+        $total = count($_rank);
+        $pages = ceil($total / $limit);
+
+        $_classement = [];
+        for($i = $start; $i < $start + $limit; $i++){
+            array_push(
+                $_classement,
+                array_merge(
+                    $_rank[$i],
+                    array(
+                        'ranking' => $i + 1,
+                    )
+                )
+            );
         }
-    
+
         return $this->render('ranking/ranking.html.twig', [
-            'ranking' => $ranking
+            'classement' => $_classement,
+            'pages' => $pages,
+            'page' => $page,
+            
         ]);
     }
 }

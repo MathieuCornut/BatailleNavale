@@ -126,6 +126,7 @@ class ComposerStaticInit164cc8b09ea879460a974d9721a6ebf6
         ),
         'D' => 
         array (
+            'Doctrine\\Persistence\\' => 21,
             'Doctrine\\ORM\\' => 13,
             'Doctrine\\Migrations\\' => 20,
             'Doctrine\\Instantiator\\' => 22,
@@ -139,7 +140,6 @@ class ComposerStaticInit164cc8b09ea879460a974d9721a6ebf6
             'Doctrine\\Common\\' => 16,
             'Doctrine\\Bundle\\MigrationsBundle\\' => 33,
             'Doctrine\\Bundle\\FixturesBundle\\' => 31,
-            'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
         ),
         'A' => 
@@ -468,6 +468,10 @@ class ComposerStaticInit164cc8b09ea879460a974d9721a6ebf6
         array (
             0 => __DIR__ . '/..' . '/easycorp/easy-log-handler/src',
         ),
+        'Doctrine\\Persistence\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence',
+        ),
         'Doctrine\\ORM\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/orm/lib/Doctrine/ORM',
@@ -522,10 +526,6 @@ class ComposerStaticInit164cc8b09ea879460a974d9721a6ebf6
         'Doctrine\\Bundle\\FixturesBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/doctrine-fixtures-bundle',
-        ),
-        'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/doctrine-cache-bundle',
         ),
         'Doctrine\\Bundle\\DoctrineBundle\\' => 
         array (

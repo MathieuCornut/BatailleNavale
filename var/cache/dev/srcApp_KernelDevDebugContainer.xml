@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/var/www/html/batailleNavale/src</parameter>
-    <parameter key="kernel.project_dir">/var/www/html/batailleNavale</parameter>
+    <parameter key="kernel.root_dir">/Users/mathieucornut/Documents/BatailleNavale/src</parameter>
+    <parameter key="kernel.project_dir">/Users/mathieucornut/Documents/BatailleNavale</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">src</parameter>
-    <parameter key="kernel.cache_dir">/var/www/html/batailleNavale/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/var/www/html/batailleNavale/var/log</parameter>
+    <parameter key="kernel.cache_dir">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/Users/mathieucornut/Documents/BatailleNavale/var/log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
-      <parameter key="DoctrineCacheBundle">Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="DoctrineMigrationsBundle">Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -27,63 +26,59 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/framework-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/sensio/framework-extra-bundle/src</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/sensio/framework-extra-bundle/src</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
-      <parameter key="DoctrineCacheBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/doctrine/doctrine-cache-bundle</parameter>
-        <parameter key="namespace">Doctrine\Bundle\DoctrineCacheBundle</parameter>
-      </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/doctrine/doctrine-migrations-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/security-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
       <parameter key="SwiftmailerBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/swiftmailer-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/swiftmailer-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SwiftmailerBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/twig-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/web-profiler-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="MonologBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/monolog-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/monolog-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/debug-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/debug-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\DebugBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/maker-bundle/src</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/maker-bundle/src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="WebServerBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/web-server-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-server-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
       </parameter>
       <parameter key="DoctrineFixturesBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/doctrine/doctrine-fixtures-bundle</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-fixtures-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\FixturesBundle</parameter>
       </parameter>
       <parameter key="WebpackEncoreBundle" type="collection">
-        <parameter key="path">/var/www/html/batailleNavale/vendor/symfony/webpack-encore-bundle/src</parameter>
+        <parameter key="path">/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/webpack-encore-bundle/src</parameter>
         <parameter key="namespace">Symfony\WebpackEncoreBundle</parameter>
       </parameter>
     </parameter>
@@ -108,22 +103,22 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/var/www/html/batailleNavale/var/cache/dev/sessions</parameter>
+    <parameter key="session.save_path">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
     <parameter key="asset.request_context.base_path"></parameter>
     <parameter key="asset.request_context.secure">false</parameter>
     <parameter key="validator.mapping.cache.prefix"></parameter>
-    <parameter key="validator.mapping.cache.file">/var/www/html/batailleNavale/var/cache/dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="translator.logging">false</parameter>
-    <parameter key="translator.default_path">/var/www/html/batailleNavale/translations</parameter>
+    <parameter key="translator.default_path">/Users/mathieucornut/Documents/BatailleNavale/translations</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/var/www/html/batailleNavale/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/profiler</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/var/www/html/batailleNavale/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -131,50 +126,8 @@
     <parameter key="router.cache_class_prefix">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="serializer.mapping.cache.file">/var/www/html/batailleNavale/var/cache/dev/serialization.php</parameter>
+    <parameter key="serializer.mapping.cache.file">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/serialization.php</parameter>
     <parameter key="serializer.mapping.cache.prefix"></parameter>
-    <parameter key="doctrine_cache.apc.class">Doctrine\Common\Cache\ApcCache</parameter>
-    <parameter key="doctrine_cache.apcu.class">Doctrine\Common\Cache\ApcuCache</parameter>
-    <parameter key="doctrine_cache.array.class">Doctrine\Common\Cache\ArrayCache</parameter>
-    <parameter key="doctrine_cache.chain.class">Doctrine\Common\Cache\ChainCache</parameter>
-    <parameter key="doctrine_cache.couchbase.class">Doctrine\Common\Cache\CouchbaseCache</parameter>
-    <parameter key="doctrine_cache.couchbase.connection.class">Couchbase</parameter>
-    <parameter key="doctrine_cache.couchbase.hostnames">localhost:8091</parameter>
-    <parameter key="doctrine_cache.file_system.class">Doctrine\Common\Cache\FilesystemCache</parameter>
-    <parameter key="doctrine_cache.php_file.class">Doctrine\Common\Cache\PhpFileCache</parameter>
-    <parameter key="doctrine_cache.memcache.class">Doctrine\Common\Cache\MemcacheCache</parameter>
-    <parameter key="doctrine_cache.memcache.connection.class">Memcache</parameter>
-    <parameter key="doctrine_cache.memcache.host">localhost</parameter>
-    <parameter key="doctrine_cache.memcache.port">11211</parameter>
-    <parameter key="doctrine_cache.memcached.class">Doctrine\Common\Cache\MemcachedCache</parameter>
-    <parameter key="doctrine_cache.memcached.connection.class">Memcached</parameter>
-    <parameter key="doctrine_cache.memcached.host">localhost</parameter>
-    <parameter key="doctrine_cache.memcached.port">11211</parameter>
-    <parameter key="doctrine_cache.mongodb.class">Doctrine\Common\Cache\MongoDBCache</parameter>
-    <parameter key="doctrine_cache.mongodb.collection.class">MongoCollection</parameter>
-    <parameter key="doctrine_cache.mongodb.connection.class">MongoClient</parameter>
-    <parameter key="doctrine_cache.mongodb.server">localhost:27017</parameter>
-    <parameter key="doctrine_cache.predis.client.class">Predis\Client</parameter>
-    <parameter key="doctrine_cache.predis.scheme">tcp</parameter>
-    <parameter key="doctrine_cache.predis.host">localhost</parameter>
-    <parameter key="doctrine_cache.predis.port">6379</parameter>
-    <parameter key="doctrine_cache.redis.class">Doctrine\Common\Cache\RedisCache</parameter>
-    <parameter key="doctrine_cache.redis.connection.class">Redis</parameter>
-    <parameter key="doctrine_cache.redis.host">localhost</parameter>
-    <parameter key="doctrine_cache.redis.port">6379</parameter>
-    <parameter key="doctrine_cache.riak.class">Doctrine\Common\Cache\RiakCache</parameter>
-    <parameter key="doctrine_cache.riak.bucket.class">Riak\Bucket</parameter>
-    <parameter key="doctrine_cache.riak.connection.class">Riak\Connection</parameter>
-    <parameter key="doctrine_cache.riak.bucket_property_list.class">Riak\BucketPropertyList</parameter>
-    <parameter key="doctrine_cache.riak.host">localhost</parameter>
-    <parameter key="doctrine_cache.riak.port">8087</parameter>
-    <parameter key="doctrine_cache.sqlite3.class">Doctrine\Common\Cache\SQLite3Cache</parameter>
-    <parameter key="doctrine_cache.sqlite3.connection.class">SQLite3</parameter>
-    <parameter key="doctrine_cache.void.class">Doctrine\Common\Cache\VoidCache</parameter>
-    <parameter key="doctrine_cache.wincache.class">Doctrine\Common\Cache\WinCacheCache</parameter>
-    <parameter key="doctrine_cache.xcache.class">Doctrine\Common\Cache\XcacheCache</parameter>
-    <parameter key="doctrine_cache.zenddata.class">Doctrine\Common\Cache\ZendDataCache</parameter>
-    <parameter key="doctrine_cache.security.acl.cache.class">Doctrine\Bundle\DoctrineCacheBundle\Acl\Model\AclCache</parameter>
     <parameter key="doctrine.dbal.logger.chain.class">Doctrine\DBAL\Logging\LoggerChain</parameter>
     <parameter key="doctrine.dbal.logger.profiling.class">Doctrine\DBAL\Logging\DebugStack</parameter>
     <parameter key="doctrine.dbal.logger.class">Symfony\Bridge\Doctrine\Logger\DbalLogger</parameter>
@@ -240,9 +193,9 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/var/www/html/batailleNavale/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
-    <parameter key="doctrine_migrations.dir_name">/var/www/html/batailleNavale/src/Migrations</parameter>
+    <parameter key="doctrine_migrations.dir_name">/Users/mathieucornut/Documents/BatailleNavale/src/Migrations</parameter>
     <parameter key="doctrine_migrations.namespace">DoctrineMigrations</parameter>
     <parameter key="doctrine_migrations.table_name">migration_versions</parameter>
     <parameter key="doctrine_migrations.column_name">version</parameter>
@@ -261,7 +214,7 @@
     <parameter key="security.access.always_authenticate_before_granting">false</parameter>
     <parameter key="security.authentication.hide_user_not_found">true</parameter>
     <parameter key="swiftmailer.mailer.default.transport.name">dynamic</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">/var/www/html/batailleNavale/var/cache/dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -277,7 +230,7 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">/var/www/html/batailleNavale/templates</parameter>
+    <parameter key="twig.default_path">/Users/mathieucornut/Documents/BatailleNavale/templates</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
     <parameter key="monolog.use_microseconds">true</parameter>
@@ -373,17 +326,12 @@
         <parameter>@WebProfiler/Collector/config.html.twig</parameter>
       </parameter>
     </parameter>
-    <parameter key="console.command.ids" type="collection">
-      <parameter>console.command.public_alias.doctrine_cache.contains_command</parameter>
-      <parameter>console.command.public_alias.doctrine_cache.delete_command</parameter>
-      <parameter>console.command.public_alias.doctrine_cache.flush_command</parameter>
-      <parameter>console.command.public_alias.doctrine_cache.stats_command</parameter>
-    </parameter>
+    <parameter key="console.command.ids" type="collection"/>
   </parameters>
   <services>
     <service id="service_container" class="Symfony\Component\DependencyInjection\ContainerInterface" public="true" synthetic="true"/>
     <service id="EasyCorp\EasyLog\EasyLogHandler" class="EasyCorp\EasyLog\EasyLogHandler" public="false">
-      <argument>/var/www/html/batailleNavale/var/log/dev.log</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/log/dev.log</argument>
     </service>
     <service id="App\Controller\AdminController" class="App\Controller\AdminController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
@@ -524,7 +472,7 @@
     <service id="cache_warmer" class="Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate" public="true">
       <argument type="tagged" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <argument type="tagged" tag="kernel.cache_clearer"/>
@@ -533,9 +481,9 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>/var/www/html/batailleNavale/src/Resources</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources</argument>
       <argument type="collection">
-        <argument>/var/www/html/batailleNavale/src</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/src</argument>
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner" public="false">
@@ -642,7 +590,7 @@
     <service id="console.command.assets_install" class="Symfony\Bundle\FrameworkBundle\Command\AssetsInstallCommand" public="false">
       <tag name="console.command" command="assets:install"/>
       <argument type="service" id="filesystem"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -686,6 +634,9 @@
         <argument>cache.annotations</argument>
         <argument>cache.property_info</argument>
         <argument>cache.messenger.restart_workers_signal</argument>
+        <argument>cache.doctrine.orm.default.metadata</argument>
+        <argument>cache.doctrine.orm.default.result</argument>
+        <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
         <argument>cache.webpack_encore</argument>
       </argument>
@@ -753,15 +704,15 @@
       <argument type="service" id="translator.data_collector"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>/var/www/html/batailleNavale/translations</argument>
-      <argument>/var/www/html/batailleNavale/templates</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/translations</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/templates</argument>
       <argument type="collection">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations</argument>
-        <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations</argument>
-        <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </argument>
       <call method="setName">
         <argument>debug:translation</argument>
@@ -773,15 +724,15 @@
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
       <argument>en</argument>
-      <argument>/var/www/html/batailleNavale/translations</argument>
-      <argument>/var/www/html/batailleNavale/templates</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/translations</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/templates</argument>
       <argument type="collection">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations</argument>
-        <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations</argument>
-        <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </argument>
       <call method="setName">
         <argument>translation:update</argument>
@@ -884,7 +835,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -913,7 +864,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1000,6 +951,9 @@
         <argument key="cache.annotations" type="service" id="cache.annotations" on-invalid="ignore_uninitialized"/>
         <argument key="cache.property_info" type="service" id="cache.property_info" on-invalid="ignore_uninitialized"/>
         <argument key="cache.messenger.restart_workers_signal" type="service" id="cache.messenger.restart_workers_signal" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.doctrine.orm.default.metadata" type="service" id="cache.doctrine.orm.default.metadata" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.doctrine.orm.default.result" type="service" id="cache.doctrine.orm.default.result" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.doctrine.orm.default.query" type="service" id="cache.doctrine.orm.default.query" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
         <argument key="cache.webpack_encore" type="service" id="cache.webpack_encore" on-invalid="ignore_uninitialized"/>
       </argument>
@@ -1008,8 +962,8 @@
     <service id="translator.selector" class="Symfony\Component\Translation\MessageSelector" public="false">
       <deprecated>The "%service_id%" service is deprecated since Symfony 4.2, use "identity_translator" instead.</deprecated>
     </service>
-    <service id=".1_NativeFileSessionHandler~C2nMjoq" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
-      <argument>/var/www/html/batailleNavale/var/cache/dev/sessions</argument>
+    <service id=".1_NativeFileSessionHandler~ftHLl3O" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/sessions</argument>
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <argument type="service" id="session.storage.native"/>
@@ -1032,12 +986,12 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
-      <argument>/var/www/html/batailleNavale/var/cache/dev/sessions</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler" public="false">
-      <argument type="service" id=".1_NativeFileSessionHandler~C2nMjoq"/>
+      <argument type="service" id=".1_NativeFileSessionHandler~ftHLl3O"/>
     </service>
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1066,7 +1020,7 @@
       <tag name="twig.extension"/>
     </service>
     <service id="form.resolved_type_factory" class="Symfony\Component\Form\Extension\DataCollector\Proxy\ResolvedTypeFactoryDataCollectorProxy" public="false">
-      <argument type="service" id=".1_ResolvedFormTypeFactory~IINIFHM"/>
+      <argument type="service" id=".1_ResolvedFormTypeFactory~7kT0Fdb"/>
       <argument type="service" id="data_collector.form"/>
     </service>
     <service id="form.registry" class="Symfony\Component\Form\FormRegistry" public="false">
@@ -1195,15 +1149,15 @@
       <argument></argument>
     </service>
     <service id="assets._version__default" class="Symfony\Component\Asset\VersionStrategy\JsonManifestVersionStrategy" public="false">
-      <argument>/var/www/html/batailleNavale/public/build/manifest.json</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/public/build/manifest.json</argument>
     </service>
     <service id="assets._default_package" class="Symfony\Component\Asset\PathPackage" public="false">
       <argument></argument>
       <argument type="service" id="assets._version__default"/>
       <argument type="service" id="assets.context"/>
     </service>
-    <service id=".1_PhpArrayAdapter~mzTBqfH" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/var/www/html/batailleNavale/var/cache/dev/validation.php</argument>
+    <service id=".1_PhpArrayAdapter~ocYG2rg" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1223,7 +1177,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/config/validation.xml</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1242,10 +1196,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/validation.php</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
-      <argument type="service" id=".1_PhpArrayAdapter~mzTBqfH"/>
+      <argument type="service" id=".1_PhpArrayAdapter~ocYG2rg"/>
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory" public="false">
       <argument type="service" id=".service_locator.LtnrEkg"/>
@@ -1307,295 +1261,330 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/var/www/html/batailleNavale/var/cache/dev/translations</argument>
+        <argument key="cache_dir">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.af.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.ar.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.ar.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.ar.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.ar.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.ar.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.ar.xlf</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.az.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.az.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.az.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.az.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.az.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.az.xlf</argument>
           </argument>
           <argument key="be" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.be.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.be.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.be.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.be.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.be.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.be.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.bg.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.bg.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.bg.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.bg.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.bg.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.bg.xlf</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.ca.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.ca.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.ca.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.ca.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.ca.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.ca.xlf</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.cs.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.cs.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.cs.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.cs.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.cs.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.cs.xlf</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.cy.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.da.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.da.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.da.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.da.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.da.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.da.xlf</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.de.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.de.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.de.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.de.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.de.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.de.xlf</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.el.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.el.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.el.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.el.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.el.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.el.xlf</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.en.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.en.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.en.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.en.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.en.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.en.xlf</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.es.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.es.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.es.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.es.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.es.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.es.xlf</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.et.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.et.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.et.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.et.xlf</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.eu.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.eu.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.eu.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.eu.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.eu.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.eu.xlf</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.fa.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.fa.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.fa.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.fa.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.fa.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.fa.xlf</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.fi.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.fi.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.fi.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.fi.xlf</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.fr.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.fr.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.fr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.fr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.fr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.fr.xlf</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.gl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.gl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.gl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.gl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.gl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.gl.xlf</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.he.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.he.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.he.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.he.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.he.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.he.xlf</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.hr.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.hr.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.hr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.hr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.hr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.hr.xlf</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.hu.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.hu.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.hu.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.hu.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.hu.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.hu.xlf</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.hy.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.hy.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.hy.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.id.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.id.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.id.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.id.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.id.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.id.xlf</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.it.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.it.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.it.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.it.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.it.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.it.xlf</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.ja.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.ja.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.ja.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.ja.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.ja.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.ja.xlf</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.lb.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.lb.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.lb.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.lb.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.lb.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.lb.xlf</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.lt.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.lt.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.lt.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.lt.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.lt.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.lt.xlf</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.lv.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.lv.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.lv.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.lv.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.lv.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.lv.xlf</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.mn.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.mn.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.mn.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.mn.xlf</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.nb.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.nb.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.nb.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.nb.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.nb.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.nb.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.nl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.nl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.nl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.nl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.nl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.nl.xlf</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.nn.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.nn.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.nn.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.nn.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.nn.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.no.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.no.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.no.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.no.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.no.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.pl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.pl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.pl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.pl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.pl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.pl.xlf</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.pt.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.pt.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.pt.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.pt.xlf</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.pt_BR.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.pt_BR.xlf</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.ro.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.ro.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.ro.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.ro.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.ro.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.ro.xlf</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.ru.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.ru.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.ru.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.ru.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.ru.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.ru.xlf</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.sk.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.sk.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.sk.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.sk.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.sk.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.sk.xlf</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.sl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.sl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.sl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.sl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.sl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.sl.xlf</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.sq.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.sr_Cyrl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.sr_Cyrl.xlf</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.sr_Latn.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.sr_Latn.xlf</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.sv.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.sv.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.sv.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.sv.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.sv.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.sv.xlf</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.th.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.th.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.th.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.th.xlf</argument>
           </argument>
           <argument key="tl" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.tl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.tl.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.tl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.tl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.tl.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.tl.xlf</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.tr.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.tr.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.tr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.tr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.tr.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.tr.xlf</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.uk.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.uk.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.uk.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.uk.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.uk.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.uk.xlf</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.vi.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.vi.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.vi.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.vi.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.vi.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.vi.xlf</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.zh_CN.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.zh_CN.xlf</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations/validators.zh_TW.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations/validators.zh_TW.xlf</argument>
           </argument>
           <argument key="pt_PT" type="collection">
-            <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations/security.pt_PT.xlf</argument>
+            <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations/security.pt_PT.xlf</argument>
           </argument>
         </argument>
         <argument key="scanned_directories" type="collection">
-          <argument>/var/www/html/batailleNavale/vendor/symfony/validator/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/form/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/security-core/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/framework-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/FrameworkBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/sensio/framework-extra-bundle/src/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/SensioFrameworkExtraBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/doctrine/doctrine-cache-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/DoctrineCacheBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/doctrine/doctrine-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/DoctrineBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/doctrine/doctrine-migrations-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/DoctrineMigrationsBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/security-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/SecurityBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/swiftmailer-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/SwiftmailerBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/twig-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/TwigBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/web-profiler-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/WebProfilerBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/monolog-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/MonologBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/debug-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/DebugBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/maker-bundle/src/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/MakerBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/web-server-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/WebServerBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/doctrine/doctrine-fixtures-bundle/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/DoctrineFixturesBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/vendor/symfony/webpack-encore-bundle/src/Resources/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/WebpackEncoreBundle/translations</argument>
-          <argument>/var/www/html/batailleNavale/src/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/validator/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/form/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-core/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/FrameworkBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/sensio/framework-extra-bundle/src/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/SensioFrameworkExtraBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/DoctrineBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-migrations-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/DoctrineMigrationsBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/SecurityBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/swiftmailer-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/SwiftmailerBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/TwigBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/WebProfilerBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/monolog-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/MonologBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/debug-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/DebugBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/maker-bundle/src/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/MakerBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-server-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/WebServerBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-fixtures-bundle/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/DoctrineFixturesBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/webpack-encore-bundle/src/Resources/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/WebpackEncoreBundle/translations</argument>
+          <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Resources/translations</argument>
+        </argument>
+        <argument key="cache_vary" type="collection">
+          <argument key="scanned_directories" type="collection">
+            <argument>vendor/symfony/validator/Resources/translations</argument>
+            <argument>vendor/symfony/form/Resources/translations</argument>
+            <argument>vendor/symfony/security-core/Resources/translations</argument>
+            <argument>translations</argument>
+            <argument>vendor/symfony/framework-bundle/Resources/translations</argument>
+            <argument>src/Resources/FrameworkBundle/translations</argument>
+            <argument>vendor/sensio/framework-extra-bundle/src/Resources/translations</argument>
+            <argument>src/Resources/SensioFrameworkExtraBundle/translations</argument>
+            <argument>vendor/doctrine/doctrine-bundle/Resources/translations</argument>
+            <argument>src/Resources/DoctrineBundle/translations</argument>
+            <argument>vendor/doctrine/doctrine-migrations-bundle/Resources/translations</argument>
+            <argument>src/Resources/DoctrineMigrationsBundle/translations</argument>
+            <argument>vendor/symfony/security-bundle/Resources/translations</argument>
+            <argument>src/Resources/SecurityBundle/translations</argument>
+            <argument>vendor/symfony/swiftmailer-bundle/Resources/translations</argument>
+            <argument>src/Resources/SwiftmailerBundle/translations</argument>
+            <argument>vendor/symfony/twig-bundle/Resources/translations</argument>
+            <argument>src/Resources/TwigBundle/translations</argument>
+            <argument>vendor/symfony/web-profiler-bundle/Resources/translations</argument>
+            <argument>src/Resources/WebProfilerBundle/translations</argument>
+            <argument>vendor/symfony/monolog-bundle/Resources/translations</argument>
+            <argument>src/Resources/MonologBundle/translations</argument>
+            <argument>vendor/symfony/debug-bundle/Resources/translations</argument>
+            <argument>src/Resources/DebugBundle/translations</argument>
+            <argument>vendor/symfony/maker-bundle/src/Resources/translations</argument>
+            <argument>src/Resources/MakerBundle/translations</argument>
+            <argument>vendor/symfony/web-server-bundle/Resources/translations</argument>
+            <argument>src/Resources/WebServerBundle/translations</argument>
+            <argument>vendor/doctrine/doctrine-fixtures-bundle/Resources/translations</argument>
+            <argument>src/Resources/DoctrineFixturesBundle/translations</argument>
+            <argument>vendor/symfony/webpack-encore-bundle/src/Resources/translations</argument>
+            <argument>src/Resources/WebpackEncoreBundle/translations</argument>
+            <argument>src/Resources/translations</argument>
+          </argument>
         </argument>
       </argument>
       <call method="setConfigCacheFactory">
@@ -1862,7 +1851,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-      <argument>file:/var/www/html/batailleNavale/var/cache/dev/profiler</argument>
+      <argument>file:/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1900,7 +1889,7 @@
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/srcApp_KernelDevDebugContainer</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/srcApp_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector" public="false">
@@ -1947,6 +1936,18 @@
         <argument type="service" id="cache.messenger.restart_workers_signal"/>
       </call>
       <call method="addInstance">
+        <argument>cache.doctrine.orm.default.metadata</argument>
+        <argument type="service" id="cache.doctrine.orm.default.metadata"/>
+      </call>
+      <call method="addInstance">
+        <argument>cache.doctrine.orm.default.result</argument>
+        <argument type="service" id="cache.doctrine.orm.default.result"/>
+      </call>
+      <call method="addInstance">
+        <argument>cache.doctrine.orm.default.query</argument>
+        <argument type="service" id="cache.doctrine.orm.default.query"/>
+      </call>
+      <call method="addInstance">
         <argument>cache.security_expression_language</argument>
         <argument type="service" id="cache.security_expression_language"/>
       </call>
@@ -1955,7 +1956,7 @@
         <argument type="service" id="cache.webpack_encore"/>
       </call>
     </service>
-    <service id=".1_ResolvedFormTypeFactory~IINIFHM" class="Symfony\Component\Form\ResolvedFormTypeFactory" public="false"/>
+    <service id=".1_ResolvedFormTypeFactory~7kT0Fdb" class="Symfony\Component\Form\ResolvedFormTypeFactory" public="false"/>
     <service id="form.type_extension.form.data_collector" class="Symfony\Component\Form\Extension\DataCollector\Type\DataCollectorTypeExtension" public="false">
       <tag name="form.type_extension"/>
       <argument type="service" id="data_collector.form"/>
@@ -2014,7 +2015,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter" public="false">
       <argument>null</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
       <argument type="service" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -2532,7 +2533,7 @@
       <argument type="service" id=".service_locator.kbKiEzc.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">/var/www/html/batailleNavale/var/cache/dev</argument>
+        <argument key="cache_dir">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -2571,7 +2572,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -2597,12 +2598,12 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
-    <service id=".2_PhpArrayAdapter~_Rbt_jp" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/var/www/html/batailleNavale/var/cache/dev/annotations.php</argument>
+    <service id=".2_PhpArrayAdapter~t5qg_1A" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
-    <service id=".1_ArrayCache~_Rbt_jp" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+    <service id=".1_ArrayCache~t5qg_1A" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -2617,7 +2618,7 @@
     <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\CachedReader" public="false">
       <tag name="annotations.cached_reader"/>
       <argument type="service" id="annotations.reader"/>
-      <argument type="service" id=".1_ArrayCache~_Rbt_jp"/>
+      <argument type="service" id=".1_ArrayCache~t5qg_1A"/>
       <argument>true</argument>
       <property name="cacheProviderBackup" type="service" id="annotations.cache"/>
     </service>
@@ -2627,12 +2628,12 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/annotations.php</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
-      <argument type="service" id=".2_PhpArrayAdapter~_Rbt_jp"/>
+      <argument type="service" id=".2_PhpArrayAdapter~t5qg_1A"/>
     </service>
     <service id="property_accessor" class="Symfony\Component\PropertyAccess\PropertyAccessor" public="false">
       <argument>false</argument>
@@ -2645,6 +2646,7 @@
         <argument type="service" id="serializer.normalizer.json_serializable"/>
         <argument type="service" id="serializer.normalizer.datetime"/>
         <argument type="service" id="serializer.normalizer.constraint_violation_list"/>
+        <argument type="service" id="serializer.normalizer.datetimezone"/>
         <argument type="service" id="serializer.normalizer.dateinterval"/>
         <argument type="service" id="serializer.normalizer.data_uri"/>
         <argument type="service" id="serializer.denormalizer.array"/>
@@ -2664,6 +2666,9 @@
       <tag name="serializer.normalizer" priority="-915"/>
       <argument type="collection"/>
       <argument type="service" id="serializer.name_converter.metadata_aware"/>
+    </service>
+    <service id="serializer.normalizer.datetimezone" class="Symfony\Component\Serializer\Normalizer\DateTimeZoneNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-915"/>
     </service>
     <service id="serializer.normalizer.dateinterval" class="Symfony\Component\Serializer\Normalizer\DateIntervalNormalizer" public="false">
       <tag name="serializer.normalizer" priority="-915"/>
@@ -2713,10 +2718,10 @@
           </service>
         </argument>
       </argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/serialization.php</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface" public="false">
-      <argument>/var/www/html/batailleNavale/var/cache/dev/serialization.php</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/serialization.php</argument>
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2857,36 +2862,6 @@
     <service id="framework_extra_bundle.argument_name_convertor" class="Sensio\Bundle\FrameworkExtraBundle\Request\ArgumentNameConverter" public="false">
       <argument type="service" id="argument_metadata_factory"/>
     </service>
-    <service id="doctrine_cache.abstract.apc" class="Doctrine\Common\Cache\ApcCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.apcu" class="Doctrine\Common\Cache\ApcuCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.array" class="Doctrine\Common\Cache\ArrayCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.chain" class="Doctrine\Common\Cache\ChainCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.couchbase" class="Doctrine\Common\Cache\CouchbaseCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.file_system" class="Doctrine\Common\Cache\FilesystemCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.php_file" class="Doctrine\Common\Cache\PhpFileCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.memcache" class="Doctrine\Common\Cache\MemcacheCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.memcached" class="Doctrine\Common\Cache\MemcachedCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.mongodb" class="Doctrine\Common\Cache\MongoDBCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.redis" class="Doctrine\Common\Cache\RedisCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.predis" class="Doctrine\Common\Cache\PredisCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.riak" class="Doctrine\Common\Cache\RiakCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.sqlite3" class="Doctrine\Common\Cache\SQLite3Cache" abstract="true"/>
-    <service id="doctrine_cache.abstract.void" class="Doctrine\Common\Cache\VoidCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.wincache" class="Doctrine\Common\Cache\WinCacheCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.xcache" class="Doctrine\Common\Cache\XcacheCache" abstract="true"/>
-    <service id="doctrine_cache.abstract.zenddata" class="Doctrine\Common\Cache\ZendDataCache" abstract="true"/>
-    <service id="doctrine_cache.contains_command" class="Doctrine\Bundle\DoctrineCacheBundle\Command\ContainsCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_cache.delete_command" class="Doctrine\Bundle\DoctrineCacheBundle\Command\DeleteCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_cache.flush_command" class="Doctrine\Bundle\DoctrineCacheBundle\Command\FlushCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_cache.stats_command" class="Doctrine\Bundle\DoctrineCacheBundle\Command\StatsCommand">
-      <tag name="console.command"/>
-    </service>
     <service id="doctrine.dbal.logger.chain" class="Doctrine\DBAL\Logging\LoggerChain" public="false" abstract="true">
       <call method="addLogger">
         <argument type="service" id="doctrine.dbal.logger"/>
@@ -2928,6 +2903,9 @@
       <tag name="twig.extension"/>
     </service>
     <service id="doctrine.dbal.schema_asset_filter_manager" class="Doctrine\Bundle\DoctrineBundle\Dbal\SchemaAssetsFilterManager" public="false" abstract="true"/>
+    <service id="doctrine.dbal.well_known_schema_asset_filter" class="Doctrine\Bundle\DoctrineBundle\Dbal\BlacklistSchemaAssetFilter" public="false">
+      <argument type="collection"/>
+    </service>
     <service id="doctrine.database_create_command" class="Doctrine\Bundle\DoctrineBundle\Command\CreateDatabaseDoctrineCommand">
       <tag name="console.command" command="doctrine:database:create"/>
       <argument type="service" id="doctrine"/>
@@ -2942,11 +2920,10 @@
         <argument>doctrine:database:drop</argument>
       </call>
     </service>
-    <service id="doctrine.generate_entities_command" class="Doctrine\Bundle\DoctrineBundle\Command\GenerateEntitiesDoctrineCommand">
-      <tag name="console.command" command="doctrine:generate:entities"/>
-      <argument type="service" id="doctrine"/>
+    <service id="doctrine.database_import_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ImportDoctrineCommand">
+      <tag name="console.command" command="doctrine:database:import"/>
       <call method="setName">
-        <argument>doctrine:generate:entities</argument>
+        <argument>doctrine:database:import</argument>
       </call>
     </service>
     <service id="doctrine.query_sql_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\RunSqlDoctrineCommand">
@@ -2998,7 +2975,7 @@
       <argument type="collection"/>
       <factory service="doctrine.dbal.connection_factory" method="createConnection"/>
     </service>
-    <service id=".1_ServiceLocator~Rr6GZjF" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".1_ServiceLocator~LwChpGS" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer" public="false">
@@ -3039,6 +3016,10 @@
     <service id="doctrine.orm.listeners.resolve_target_entity" class="Doctrine\ORM\Tools\ResolveTargetEntityListener" public="false"/>
     <service id="doctrine.orm.naming_strategy.default" class="Doctrine\ORM\Mapping\DefaultNamingStrategy" public="false"/>
     <service id="doctrine.orm.naming_strategy.underscore" class="Doctrine\ORM\Mapping\UnderscoreNamingStrategy" public="false"/>
+    <service id="doctrine.orm.naming_strategy.underscore_number_aware" class="Doctrine\ORM\Mapping\UnderscoreNamingStrategy" public="false">
+      <argument>0</argument>
+      <argument>true</argument>
+    </service>
     <service id="doctrine.orm.quote_strategy.default" class="Doctrine\ORM\Mapping\DefaultQuoteStrategy" public="false"/>
     <service id="doctrine.orm.quote_strategy.ansi" class="Doctrine\ORM\Mapping\AnsiQuoteStrategy" public="false"/>
     <service id="doctrine.cache_clear_metadata_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ClearMetadataCacheDoctrineCommand">
@@ -3095,12 +3076,6 @@
         <argument>doctrine:cache:clear-entity-region</argument>
       </call>
     </service>
-    <service id="doctrine.database_import_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ImportDoctrineCommand">
-      <tag name="console.command" command="doctrine:database:import"/>
-      <call method="setName">
-        <argument>doctrine:database:import</argument>
-      </call>
-    </service>
     <service id="doctrine.mapping_info_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\InfoDoctrineCommand">
       <tag name="console.command" command="doctrine:mapping:info"/>
       <call method="setName">
@@ -3146,19 +3121,19 @@
         </argument>
       </call>
       <call method="setMetadataCacheImpl">
-        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_metadata_cache"/>
+        <argument type="service" id="doctrine.orm.cache.provider.cache.doctrine.orm.default.metadata"/>
       </call>
       <call method="setQueryCacheImpl">
-        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_query_cache"/>
+        <argument type="service" id="doctrine.orm.cache.provider.cache.doctrine.orm.default.query"/>
       </call>
       <call method="setResultCacheImpl">
-        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_result_cache"/>
+        <argument type="service" id="doctrine.orm.cache.provider.cache.doctrine.orm.default.result"/>
       </call>
       <call method="setMetadataDriverImpl">
         <argument type="service" id="doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>/var/www/html/batailleNavale/var/cache/dev/doctrine/orm/Proxies</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -3188,7 +3163,7 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
-        <argument>/var/www/html/batailleNavale/src/Entity</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/src/Entity</argument>
       </argument>
     </service>
     <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
@@ -3197,20 +3172,26 @@
         <argument>App\Entity</argument>
       </call>
     </service>
-    <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
-      <call method="setNamespace">
-        <argument>sf_orm_default_eb0a6f8c440d25ae50c3c5ea6741b3612d47312c46ae10ed137305f30525882d</argument>
-      </call>
+    <service id="cache.doctrine.orm.default.metadata" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="true">
+      <tag name="cache.pool"/>
+      <argument type="service" id="cache.doctrine.orm.default.metadata.recorder_inner"/>
     </service>
-    <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
-      <call method="setNamespace">
-        <argument>sf_orm_default_eb0a6f8c440d25ae50c3c5ea6741b3612d47312c46ae10ed137305f30525882d</argument>
-      </call>
+    <service id="doctrine.orm.cache.provider.cache.doctrine.orm.default.metadata" class="Symfony\Component\Cache\DoctrineProvider">
+      <argument type="service" id="cache.doctrine.orm.default.metadata"/>
     </service>
-    <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
-      <call method="setNamespace">
-        <argument>sf_orm_default_eb0a6f8c440d25ae50c3c5ea6741b3612d47312c46ae10ed137305f30525882d</argument>
-      </call>
+    <service id="cache.doctrine.orm.default.result" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="true">
+      <tag name="cache.pool"/>
+      <argument type="service" id="cache.doctrine.orm.default.result.recorder_inner"/>
+    </service>
+    <service id="doctrine.orm.cache.provider.cache.doctrine.orm.default.result" class="Symfony\Component\Cache\DoctrineProvider">
+      <argument type="service" id="cache.doctrine.orm.default.result"/>
+    </service>
+    <service id="cache.doctrine.orm.default.query" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="true">
+      <tag name="cache.pool"/>
+      <argument type="service" id="cache.doctrine.orm.default.query.recorder_inner"/>
+    </service>
+    <service id="doctrine.orm.cache.provider.cache.doctrine.orm.default.query" class="Symfony\Component\Cache\DoctrineProvider">
+      <argument type="service" id="cache.doctrine.orm.default.query"/>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver">
       <argument type="service" id="service_container"/>
@@ -3952,10 +3933,10 @@
         <argument>security:encode-password</argument>
       </call>
     </service>
-    <service id=".4_Swift_Transport_Esmtp_Auth_NTLMAuthenticator~ZkEpggk" class="Swift_Transport_Esmtp_Auth_NTLMAuthenticator" public="false"/>
-    <service id=".3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~ZkEpggk" class="Swift_Transport_Esmtp_Auth_PlainAuthenticator" public="false"/>
-    <service id=".2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~ZkEpggk" class="Swift_Transport_Esmtp_Auth_LoginAuthenticator" public="false"/>
-    <service id=".1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~ZkEpggk" class="Swift_Transport_Esmtp_Auth_CramMd5Authenticator" public="false"/>
+    <service id=".4_Swift_Transport_Esmtp_Auth_NTLMAuthenticator~7KUoFIi" class="Swift_Transport_Esmtp_Auth_NTLMAuthenticator" public="false"/>
+    <service id=".3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~7KUoFIi" class="Swift_Transport_Esmtp_Auth_PlainAuthenticator" public="false"/>
+    <service id=".2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~7KUoFIi" class="Swift_Transport_Esmtp_Auth_LoginAuthenticator" public="false"/>
+    <service id=".1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~7KUoFIi" class="Swift_Transport_Esmtp_Auth_CramMd5Authenticator" public="false"/>
     <service id="swiftmailer.mailer.abstract" class="Swift_Mailer" public="true" abstract="true">
       <argument type="service" id="swiftmailer.mailer.default.transport.spool"/>
     </service>
@@ -3968,10 +3949,10 @@
     </service>
     <service id="swiftmailer.transport.authhandler.abstract" class="Swift_Transport_Esmtp_AuthHandler" public="false" abstract="true">
       <argument type="collection">
-        <argument type="service" id=".1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~ZkEpggk"/>
-        <argument type="service" id=".2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~ZkEpggk"/>
-        <argument type="service" id=".3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~ZkEpggk"/>
-        <argument type="service" id=".4_Swift_Transport_Esmtp_Auth_NTLMAuthenticator~ZkEpggk"/>
+        <argument type="service" id=".1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~7KUoFIi"/>
+        <argument type="service" id=".2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~7KUoFIi"/>
+        <argument type="service" id=".3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~7KUoFIi"/>
+        <argument type="service" id=".4_Swift_Transport_Esmtp_Auth_NTLMAuthenticator~7KUoFIi"/>
       </argument>
     </service>
     <service id="swiftmailer.transport.eventdispatcher.abstract" class="Swift_Events_SimpleEventDispatcher" public="false" abstract="true"/>
@@ -4054,7 +4035,7 @@
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
         <argument key="autoescape">name</argument>
-        <argument key="cache">/var/www/html/batailleNavale/var/cache/dev/twig</argument>
+        <argument key="cache">/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
       </argument>
       <call method="addExtension">
@@ -4143,16 +4124,16 @@
       <argument type="service" id=".service_locator.lSIKWsr.twig.cache_warmer"/>
       <argument>null</argument>
       <argument type="collection">
-        <argument key="/var/www/html/batailleNavale/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+        <argument key="/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
       </argument>
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>/var/www/html/batailleNavale/src</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/src</argument>
       <argument type="collection">
-        <argument key="/var/www/html/batailleNavale/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+        <argument key="/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
       </argument>
-      <argument>/var/www/html/batailleNavale/templates</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/templates</argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
@@ -4163,68 +4144,68 @@
     <service id="twig.loader.native_filesystem" class="Symfony\Bundle\TwigBundle\Loader\NativeFilesystemLoader" public="false">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/framework-bundle/Resources/views</argument>
         <argument>!Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-bundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/security-bundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>!Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views</argument>
         <argument>!Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/debug-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/debug-bundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/debug-bundle/Resources/views</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/debug-bundle/Resources/views</argument>
         <argument>!Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/templates</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/templates</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/batailleNavale/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -4250,7 +4231,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -4333,10 +4314,10 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>/var/www/html/batailleNavale/templates</argument>
-      <argument>/var/www/html/batailleNavale/src</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/templates</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/src</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -4349,7 +4330,7 @@
         <argument>lint:twig</argument>
       </call>
     </service>
-    <service id=".2_HtmlDumper~sufbC.W" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
+    <service id=".2_HtmlDumper~hMQSDvW" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
       <argument>null</argument>
       <argument>UTF-8</argument>
       <argument>1</argument>
@@ -4360,14 +4341,14 @@
         </argument>
       </call>
     </service>
-    <service id=".1_NonceGenerator~sufbC.W" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
+    <service id=".1_NonceGenerator~hMQSDvW" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController" public="true">
       <argument type="service" id="router.default" on-invalid="null"/>
       <argument type="service" id="profiler" on-invalid="null"/>
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -4381,11 +4362,11 @@
       <argument type="service" id="debug.file_link_formatter"/>
     </service>
     <service id="web_profiler.csp.handler" class="Symfony\Bundle\WebProfilerBundle\Csp\ContentSecurityPolicyHandler" public="false">
-      <argument type="service" id=".1_NonceGenerator~sufbC.W"/>
+      <argument type="service" id=".1_NonceGenerator~hMQSDvW"/>
     </service>
     <service id="twig.extension.webprofiler" class="Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension" public="false">
       <tag name="twig.extension"/>
-      <argument type="service" id=".2_HtmlDumper~sufbC.W"/>
+      <argument type="service" id=".2_HtmlDumper~hMQSDvW"/>
     </service>
     <service id="debug.file_link_formatter.url_format" class="string" public="false">
       <argument type="service" id="router.default"/>
@@ -4443,7 +4424,7 @@
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor" public="false"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
       <tag name="kernel.reset" method="reset"/>
-      <argument>/var/www/html/batailleNavale/var/log/dev.log</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/log/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -4460,19 +4441,19 @@
       <argument type="collection"/>
       <argument type="collection"/>
     </service>
-    <service id=".5_HtmlDescriptor~3E0uGZo" class="Symfony\Component\VarDumper\Command\Descriptor\HtmlDescriptor" public="false">
+    <service id=".5_HtmlDescriptor~otNxpBl" class="Symfony\Component\VarDumper\Command\Descriptor\HtmlDescriptor" public="false">
       <argument type="service" id="var_dumper.html_dumper"/>
     </service>
-    <service id=".4_CliDescriptor~3E0uGZo" class="Symfony\Component\VarDumper\Command\Descriptor\CliDescriptor" public="false">
+    <service id=".4_CliDescriptor~otNxpBl" class="Symfony\Component\VarDumper\Command\Descriptor\CliDescriptor" public="false">
       <argument type="service" id="var_dumper.cli_dumper"/>
     </service>
-    <service id=".3_CliContextProvider~3E0uGZo" class="Symfony\Component\VarDumper\Dumper\ContextProvider\CliContextProvider" public="false"/>
-    <service id=".2_RequestContextProvider~3E0uGZo" class="Symfony\Component\VarDumper\Dumper\ContextProvider\RequestContextProvider" public="false">
+    <service id=".3_CliContextProvider~otNxpBl" class="Symfony\Component\VarDumper\Dumper\ContextProvider\CliContextProvider" public="false"/>
+    <service id=".2_RequestContextProvider~otNxpBl" class="Symfony\Component\VarDumper\Dumper\ContextProvider\RequestContextProvider" public="false">
       <argument type="service" id="request_stack"/>
     </service>
-    <service id=".1_SourceContextProvider~3E0uGZo" class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider" public="false">
+    <service id=".1_SourceContextProvider~otNxpBl" class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider" public="false">
       <argument>UTF-8</argument>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
     </service>
     <service id="twig.extension.dump" class="Symfony\Bridge\Twig\Extension\DumpExtension" public="false">
@@ -4533,9 +4514,9 @@
     <service id="var_dumper.server_connection" class="Symfony\Component\VarDumper\Server\Connection" public="false">
       <argument>tcp://%env(VAR_DUMPER_SERVER)%</argument>
       <argument type="collection">
-        <argument key="source" type="service" id=".1_SourceContextProvider~3E0uGZo"/>
-        <argument key="request" type="service" id=".2_RequestContextProvider~3E0uGZo"/>
-        <argument key="cli" type="service" id=".3_CliContextProvider~3E0uGZo"/>
+        <argument key="source" type="service" id=".1_SourceContextProvider~otNxpBl"/>
+        <argument key="request" type="service" id=".2_RequestContextProvider~otNxpBl"/>
+        <argument key="cli" type="service" id=".3_CliContextProvider~otNxpBl"/>
       </argument>
     </service>
     <service id="var_dumper.dump_server" class="Symfony\Component\VarDumper\Server\DumpServer" public="false">
@@ -4547,8 +4528,8 @@
       <tag name="console.command" command="server:dump"/>
       <argument type="service" id="var_dumper.dump_server"/>
       <argument type="collection">
-        <argument key="cli" type="service" id=".4_CliDescriptor~3E0uGZo"/>
-        <argument key="html" type="service" id=".5_HtmlDescriptor~3E0uGZo"/>
+        <argument key="cli" type="service" id=".4_CliDescriptor~otNxpBl"/>
+        <argument key="html" type="service" id=".5_HtmlDescriptor~otNxpBl"/>
       </argument>
       <call method="setName">
         <argument>server:dump</argument>
@@ -4557,8 +4538,8 @@
     <service id="maker.file_manager" class="Symfony\Bundle\MakerBundle\FileManager" public="false">
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
-      <argument>/var/www/html/batailleNavale</argument>
-      <argument>/var/www/html/batailleNavale/templates</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder" public="false">
       <argument>App</argument>
@@ -4616,7 +4597,7 @@
       <tag name="maker.command"/>
       <argument type="service" id="maker.file_manager"/>
       <argument type="service" id="maker.doctrine_helper"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
       <argument type="service" id="maker.generator"/>
     </service>
     <service id="maker.maker.make_fixtures" class="Symfony\Bundle\MakerBundle\Maker\MakeFixtures" public="false">
@@ -4666,36 +4647,36 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration" public="false">
       <tag name="maker.command"/>
-      <argument>/var/www/html/batailleNavale</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale</argument>
     </service>
     <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand" public="false">
       <tag name="console.command" command="server:run"/>
-      <argument>/var/www/html/batailleNavale/public</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/public</argument>
       <argument>dev</argument>
-      <argument>/var/www/html/batailleNavale/var/cache</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache</argument>
       <call method="setName">
         <argument>server:run</argument>
       </call>
     </service>
     <service id="web_server.command.server_start" class="Symfony\Bundle\WebServerBundle\Command\ServerStartCommand" public="false">
       <tag name="console.command" command="server:start"/>
-      <argument>/var/www/html/batailleNavale/public</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/public</argument>
       <argument>dev</argument>
-      <argument>/var/www/html/batailleNavale/var/cache</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache</argument>
       <call method="setName">
         <argument>server:start</argument>
       </call>
     </service>
     <service id="web_server.command.server_stop" class="Symfony\Bundle\WebServerBundle\Command\ServerStopCommand" public="false">
       <tag name="console.command" command="server:stop"/>
-      <argument>/var/www/html/batailleNavale/var/cache</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache</argument>
       <call method="setName">
         <argument>server:stop</argument>
       </call>
     </service>
     <service id="web_server.command.server_status" class="Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand" public="false">
       <tag name="console.command" command="server:status"/>
-      <argument>/var/www/html/batailleNavale/var/cache</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache</argument>
       <call method="setName">
         <argument>server:status</argument>
       </call>
@@ -4725,7 +4706,7 @@
         </argument>
       </call>
     </service>
-    <service id=".1_ServiceLocator~aciI5df" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".1_ServiceLocator~UcIyPuh" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="webpack_encore.entrypoint_lookup_collection" type="service" id="webpack_encore.entrypoint_lookup_collection"/>
@@ -4744,18 +4725,18 @@
     </service>
     <service id="webpack_encore.twig_entry_files_extension" class="Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension" public="false">
       <tag name="twig.extension"/>
-      <argument type="service" id=".1_ServiceLocator~aciI5df"/>
+      <argument type="service" id=".1_ServiceLocator~UcIyPuh"/>
     </service>
     <service id="webpack_encore.entrypoint_lookup.cache_warmer" class="Symfony\WebpackEncoreBundle\CacheWarmer\EntrypointCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="collection">
-        <argument key="_default">/var/www/html/batailleNavale/public/build/entrypoints.json</argument>
+        <argument key="_default">/Users/mathieucornut/Documents/BatailleNavale/public/build/entrypoints.json</argument>
       </argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/webpack_encore.cache.php</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/webpack_encore.cache.php</argument>
       <argument type="service" id="cache.webpack_encore"/>
     </service>
     <service id="webpack_encore.cache" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/var/www/html/batailleNavale/var/cache/dev/webpack_encore.cache.php</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/webpack_encore.cache.php</argument>
       <argument type="service" id="cache.webpack_encore"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -4766,7 +4747,7 @@
     </service>
     <service id="webpack_encore.entrypoint_lookup[_default]" class="Symfony\WebpackEncoreBundle\Asset\EntrypointLookup">
       <tag name="kernel.reset" method="reset"/>
-      <argument>/var/www/html/batailleNavale/public/build/entrypoints.json</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/public/build/entrypoints.json</argument>
       <argument>null</argument>
       <argument>_default</argument>
       <argument>true</argument>
@@ -4991,7 +4972,7 @@
     <service id=".service_locator.Txvqv4R" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="manager" type="service" id="doctrine.orm.default_entity_manager"/>
+        <argument key="manager" type="service" id=".errored..service_locator.Txvqv4R.Doctrine\Common\Persistence\ObjectManager"/>
       </argument>
     </service>
     <service id=".service_locator.53_YPjN" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -5008,7 +4989,7 @@
       <argument type="collection">
         <argument key="game" type="service" id=".errored..service_locator.MzJN91O.App\Entity\Combat"/>
         <argument key="gameFunctions" type="service" id="App\Service\GameFunctions"/>
-        <argument key="manager" type="service" id="doctrine.orm.default_entity_manager"/>
+        <argument key="manager" type="service" id=".errored..service_locator.MzJN91O.Doctrine\Common\Persistence\ObjectManager"/>
         <argument key="target" type="service" id=".errored..service_locator.MzJN91O.App\Entity\Boat"/>
       </argument>
     </service>
@@ -5033,7 +5014,7 @@
         <argument key="authenticationUtils" type="service" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.zrGtrkU" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.c2yAofJ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\AdminController::admin_editRole" type="service" id=".service_locator.wypGnUQ"/>
@@ -5042,7 +5023,7 @@
         <argument key="App\Controller\GameController::fight" type="service" id=".service_locator.53_YPjN"/>
         <argument key="App\Controller\GameController::start" type="service" id=".service_locator.Txvqv4R"/>
         <argument key="App\Controller\ProfilController::profile" type="service" id=".service_locator.wypGnUQ"/>
-        <argument key="App\Controller\RankingController::index" type="service" id=".service_locator.PAMpUhx"/>
+        <argument key="App\Controller\RankingController::pagi" type="service" id=".service_locator.PAMpUhx"/>
         <argument key="App\Controller\RegistrationController::register" type="service" id=".service_locator.mkz8yKg"/>
         <argument key="App\Controller\SecurityController::login" type="service" id=".service_locator.EbLunuf"/>
         <argument key="App\Controller\AdminController:admin_editRole" type="service" id=".service_locator.wypGnUQ"/>
@@ -5051,7 +5032,7 @@
         <argument key="App\Controller\GameController:fight" type="service" id=".service_locator.53_YPjN"/>
         <argument key="App\Controller\GameController:start" type="service" id=".service_locator.Txvqv4R"/>
         <argument key="App\Controller\ProfilController:profile" type="service" id=".service_locator.wypGnUQ"/>
-        <argument key="App\Controller\RankingController:index" type="service" id=".service_locator.PAMpUhx"/>
+        <argument key="App\Controller\RankingController:pagi" type="service" id=".service_locator.PAMpUhx"/>
         <argument key="App\Controller\RegistrationController:register" type="service" id=".service_locator.mkz8yKg"/>
         <argument key="App\Controller\SecurityController:login" type="service" id=".service_locator.EbLunuf"/>
       </argument>
@@ -5473,12 +5454,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.zrGtrkU"/>
+      <argument type="service" id=".service_locator.c2yAofJ"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.zrGtrkU"/>
+      <argument type="service" id=".service_locator.c2yAofJ"/>
     </service>
     <service id=".service_locator.UwRI0uT" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
@@ -5503,11 +5484,13 @@
       </argument>
     </service>
     <service id=".errored..service_locator.wypGnUQ.App\Entity\User" class="App\Entity\User"/>
+    <service id=".errored..service_locator.Txvqv4R.Doctrine\Common\Persistence\ObjectManager" class="Doctrine\Common\Persistence\ObjectManager"/>
     <service id=".errored..service_locator.53_YPjN.App\Entity\Combat" class="App\Entity\Combat"/>
     <service id=".errored..service_locator.MzJN91O.App\Entity\Combat" class="App\Entity\Combat"/>
+    <service id=".errored..service_locator.MzJN91O.Doctrine\Common\Persistence\ObjectManager" class="Doctrine\Common\Persistence\ObjectManager"/>
     <service id=".errored..service_locator.MzJN91O.App\Entity\Boat" class="App\Entity\Boat"/>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
-      <argument type="service" id=".service_locator.hqQLbg_"/>
+      <argument type="service" id=".service_locator.xeINJOL"/>
       <argument type="collection">
         <argument key="about">console.command.about</argument>
         <argument key="assets:install">console.command.assets_install</argument>
@@ -5531,7 +5514,7 @@
         <argument key="debug:form">console.command.form_debug</argument>
         <argument key="doctrine:database:create">doctrine.database_create_command</argument>
         <argument key="doctrine:database:drop">doctrine.database_drop_command</argument>
-        <argument key="doctrine:generate:entities">doctrine.generate_entities_command</argument>
+        <argument key="doctrine:database:import">doctrine.database_import_command</argument>
         <argument key="doctrine:query:sql">doctrine.query_sql_command</argument>
         <argument key="doctrine:cache:clear-metadata">doctrine.cache_clear_metadata_command</argument>
         <argument key="doctrine:cache:clear-query">doctrine.cache_clear_query_cache_command</argument>
@@ -5542,7 +5525,6 @@
         <argument key="doctrine:schema:drop">doctrine.schema_drop_command</argument>
         <argument key="doctrine:ensure-production-settings">doctrine.ensure_production_settings_command</argument>
         <argument key="doctrine:cache:clear-entity-region">doctrine.clear_entity_region_command</argument>
-        <argument key="doctrine:database:import">doctrine.database_import_command</argument>
         <argument key="doctrine:mapping:info">doctrine.mapping_info_command</argument>
         <argument key="doctrine:cache:clear-query-region">doctrine.clear_query_region_command</argument>
         <argument key="doctrine:query:dql">doctrine.query_dql_command</argument>
@@ -5592,7 +5574,7 @@
         <argument key="make:migration">maker.auto_command.make_migration</argument>
       </argument>
     </service>
-    <service id=".service_locator.hqQLbg_" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.xeINJOL" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="console.command.about" type="service" id="console.command.about"/>
@@ -5626,7 +5608,6 @@
         <argument key="doctrine.database_import_command" type="service" id="doctrine.database_import_command"/>
         <argument key="doctrine.ensure_production_settings_command" type="service" id="doctrine.ensure_production_settings_command"/>
         <argument key="doctrine.fixtures_load_command" type="service" id="doctrine.fixtures_load_command"/>
-        <argument key="doctrine.generate_entities_command" type="service" id="doctrine.generate_entities_command"/>
         <argument key="doctrine.mapping_convert_command" type="service" id="doctrine.mapping_convert_command"/>
         <argument key="doctrine.mapping_import_command" type="service" id="doctrine.mapping_import_command"/>
         <argument key="doctrine.mapping_info_command" type="service" id="doctrine.mapping_info_command"/>
@@ -5679,76 +5660,79 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
-      <argument>PxEV3T7+bB</argument>
+      <argument>4DDSxTVSNv</argument>
       <argument>0</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>J-X5e8QXHI</argument>
+      <argument>jYlZeSsQVg</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>z-XE3iTKHc</argument>
+      <argument>z6NFi4oj4m</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>9CUGAkaNus</argument>
+      <argument>GQ24eoa4NG</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>ZywIsfX0qr</argument>
+      <argument>TCuOJEoh9i</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>0MUg0fQ4Fa</argument>
+      <argument>+6QIBm0C3r</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.messenger.restart_workers_signal.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
-      <argument>9jQOKVmiPf</argument>
+      <argument>ON8QKy-Nex</argument>
       <argument>0</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
+    <service id="cache.doctrine.orm.default.metadata.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter" public="false"/>
+    <service id="cache.doctrine.orm.default.result.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter" public="false"/>
+    <service id="cache.doctrine.orm.default.query.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter" public="false"/>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>cKFQoa8IKR</argument>
+      <argument>BtDLsCgRNF</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.webpack_encore.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>FwFOfkSjbT</argument>
+      <argument>h2lmgLKySw</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/var/www/html/batailleNavale/var/cache/dev/pools</argument>
+      <argument>/Users/mathieucornut/Documents/BatailleNavale/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -5839,16 +5823,14 @@
     <service id="Doctrine\DBAL\Driver\Connection" alias="doctrine.dbal.default_connection" public="false"/>
     <service id="Doctrine\DBAL\Connection" alias="doctrine.dbal.default_connection" public="false"/>
     <service id="Doctrine\Common\Persistence\ManagerRegistry" alias="doctrine" public="false"/>
-    <service id="Symfony\Bridge\Doctrine\RegistryInterface" alias="doctrine" public="false"/>
     <service id="database_connection" alias="doctrine.dbal.default_connection" public="true"/>
     <service id="doctrine.dbal.event_manager" alias="doctrine.dbal.default_connection.event_manager" public="false"/>
-    <service id="Doctrine\Common\Persistence\ObjectManager" alias="doctrine.orm.default_entity_manager" public="false"/>
     <service id="Doctrine\ORM\EntityManagerInterface" alias="doctrine.orm.default_entity_manager" public="false"/>
     <service id="doctrine.orm.metadata.annotation_reader" alias="annotations.cached_reader" public="false"/>
     <service id="doctrine.orm.entity_manager" alias="doctrine.orm.default_entity_manager" public="true"/>
-    <service id="doctrine.orm.default_metadata_cache" alias="doctrine_cache.providers.doctrine.orm.default_metadata_cache" public="true"/>
-    <service id="doctrine.orm.default_result_cache" alias="doctrine_cache.providers.doctrine.orm.default_result_cache" public="true"/>
-    <service id="doctrine.orm.default_query_cache" alias="doctrine_cache.providers.doctrine.orm.default_query_cache" public="true"/>
+    <service id="doctrine.orm.default_metadata_cache" alias="doctrine.orm.cache.provider.cache.doctrine.orm.default.metadata" public="false"/>
+    <service id="doctrine.orm.default_result_cache" alias="doctrine.orm.cache.provider.cache.doctrine.orm.default.result" public="false"/>
+    <service id="doctrine.orm.default_query_cache" alias="doctrine.orm.cache.provider.cache.doctrine.orm.default.query" public="false"/>
     <service id="doctrine.orm.default_entity_manager.event_manager" alias="doctrine.dbal.default_connection.event_manager" public="false"/>
     <service id="Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface" alias="security.authorization_checker" public="false"/>
     <service id="Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface" alias="security.token_storage" public="false"/>
@@ -5888,7 +5870,7 @@
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger" public="false"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupCollectionInterface" alias="webpack_encore.entrypoint_lookup_collection" public="false"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.zrGtrkU"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.c2yAofJ"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
@@ -5917,11 +5899,7 @@
     <service id="argument_resolver.default" alias="debug.argument_resolver.default" public="false"/>
     <service id="argument_resolver.variadic" alias="debug.argument_resolver.variadic" public="false"/>
     <service id="argument_resolver.not_tagged_controller" alias="debug.argument_resolver.not_tagged_controller" public="false"/>
-    <service id=".service_locator.tSKDlY7" alias=".1_ServiceLocator~aciI5df" public="false"/>
+    <service id=".service_locator.tSKDlY7" alias=".1_ServiceLocator~UcIyPuh" public="false"/>
     <service id=".service_locator.VdFTLMb" alias=".service_locator.LtnrEkg" public="false"/>
-    <service id="console.command.public_alias.doctrine_cache.contains_command" alias="doctrine_cache.contains_command" public="true"/>
-    <service id="console.command.public_alias.doctrine_cache.delete_command" alias="doctrine_cache.delete_command" public="true"/>
-    <service id="console.command.public_alias.doctrine_cache.flush_command" alias="doctrine_cache.flush_command" public="true"/>
-    <service id="console.command.public_alias.doctrine_cache.stats_command" alias="doctrine_cache.stats_command" public="true"/>
   </services>
 </container>

@@ -101,9 +101,13 @@ class __TwigTemplate_53f7a1af2b5a03338718d7cfdd8767f0910433680ab9e5fd32b5df8be2e
         } else {
             // line 13
             echo "        <h2>Loser !</h2>
+        <a href=\"";
+            // line 14
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("self_profile");
+            echo "\">Retour sur votre profil</a>
     ";
         }
-        // line 15
+        // line 16
         echo "</div>
 
 ";
@@ -127,7 +131,7 @@ class __TwigTemplate_53f7a1af2b5a03338718d7cfdd8767f0910433680ab9e5fd32b5df8be2e
 
     public function getDebugInfo()
     {
-        return array (  107 => 15,  103 => 13,  98 => 11,  95 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  111 => 16,  106 => 14,  103 => 13,  98 => 11,  95 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -145,9 +149,10 @@ class __TwigTemplate_53f7a1af2b5a03338718d7cfdd8767f0910433680ab9e5fd32b5df8be2e
         <a href=\"{{path(\"self_profile\")}}\">Retour sur votre profil</a>
     {% else %}
         <h2>Loser !</h2>
+        <a href=\"{{path(\"self_profile\")}}\">Retour sur votre profil</a>
     {% endif %}
 </div>
 
-{% endblock %}", "game/end.html.twig", "/var/www/html/batailleNavale/templates/game/end.html.twig");
+{% endblock %}", "game/end.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/game/end.html.twig");
     }
 }

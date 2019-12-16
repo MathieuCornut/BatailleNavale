@@ -127,7 +127,10 @@ class __TwigTemplate_1a1c91ad6aa4df8123a5a4f8d7ce72334da18787053da11c8a34934e25b
         echo "</p></td>
             </tr>
             <tr>
-                <td><p>Dernière connexion le JJ/MM/AAAA</p></td>
+                <td><p>Dernière connexion il y a ";
+        // line 33
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 33, $this->source); })()), "lastLoginStr", [0 => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 33, $this->source); })()), "lastLogin", [], "any", false, false, false, 33)], "method", false, false, false, 33), "html", null, true);
+        echo "</p></td>
             </tr>
             <tr>
                 <td><p>Grade</p></td>
@@ -268,7 +271,7 @@ class __TwigTemplate_1a1c91ad6aa4df8123a5a4f8d7ce72334da18787053da11c8a34934e25b
 
     public function getDebugInfo()
     {
-        return array (  240 => 75,  236 => 74,  231 => 71,  217 => 70,  207 => 68,  197 => 66,  194 => 65,  177 => 64,  174 => 63,  171 => 62,  159 => 54,  152 => 50,  145 => 46,  126 => 30,  120 => 27,  110 => 19,  107 => 18,  104 => 17,  101 => 16,  95 => 14,  92 => 13,  89 => 12,  86 => 11,  83 => 10,  80 => 9,  77 => 8,  74 => 7,  72 => 6,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  243 => 75,  239 => 74,  234 => 71,  220 => 70,  210 => 68,  200 => 66,  197 => 65,  180 => 64,  177 => 63,  174 => 62,  162 => 54,  155 => 50,  148 => 46,  132 => 33,  126 => 30,  120 => 27,  110 => 19,  107 => 18,  104 => 17,  101 => 16,  95 => 14,  92 => 13,  89 => 12,  86 => 11,  83 => 10,  80 => 9,  77 => 8,  74 => 7,  72 => 6,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -305,7 +308,7 @@ class __TwigTemplate_1a1c91ad6aa4df8123a5a4f8d7ce72334da18787053da11c8a34934e25b
                 <td><p>Inscrit le {{ user.getRegistrationDate()|date(\"d/m/Y\") }}</p></td>
             </tr>
             <tr>
-                <td><p>Dernière connexion le JJ/MM/AAAA</p></td>
+                <td><p>Dernière connexion il y a {{user.lastLoginStr(user.lastLogin)}}</p></td>
             </tr>
             <tr>
                 <td><p>Grade</p></td>
@@ -356,6 +359,6 @@ class __TwigTemplate_1a1c91ad6aa4df8123a5a4f8d7ce72334da18787053da11c8a34934e25b
         <p>// TODO, Objet Combat, boucle for de tous les combat ou joueur 1 ou 2 = id du joueur</p>
     </div>
 </div>
-{% endblock %}", "profil/profile.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/profil/profile.html.twig");
+{% endblock %}", "profil/profile.html.twig", "/var/www/html/batailleNavaleClean/templates/profil/profile.html.twig");
     }
 }

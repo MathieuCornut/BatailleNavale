@@ -30,7 +30,7 @@
                 <td><p>Inscrit le {{ user.getRegistrationDate()|date("d/m/Y") }}</p></td>
             </tr>
             <tr>
-                <td><p>Dernière connexion le JJ/MM/AAAA</p></td>
+                <td><p>Dernière connexion il y a {{user.lastLoginStr(user.lastLogin)}}</p></td>
             </tr>
             <tr>
                 <td><p>Grade</p></td>

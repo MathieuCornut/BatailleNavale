@@ -5,6 +5,7 @@ namespace App\Controller;
 //Class Users
 use App\Entity\User;
 use App\Repository\UserRepository;
+use App\Service\UserFunctions;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

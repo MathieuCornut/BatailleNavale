@@ -155,6 +155,6 @@ class __TwigTemplate_b60ac944e035f392a47ce9d6ac85f82f24fc77fbb973b152ff83e9db101
 {% block panel %}
     {{ render(path('_profiler_router', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/var/www/html/batailleNavaleClean/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

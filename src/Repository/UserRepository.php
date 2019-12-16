@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
+use Doctrine\ORM\EntityRepository;
 
 /**
  * @method User|null find($id, $lockMode = null, $lockVersion = null)
@@ -18,6 +19,32 @@ class UserRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, User::class);
     }
+
+    public function getRanking()
+    {
+        return $this->createQueryBuilder('u')
+            ->select('u.id, u.pseudo,u.count_victory,u.last_login')
+            ->orderBy('u.count_victory', 'DESC')
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+
+    /*public function getRanking() {
+        $conn = $this->getDoctrine()->getManager()->getConnection();
+
+        //On demande tous les utilisateurs classés par nombre de victoires
+        $sql = '
+            SELECT id,pseudo,count_victory,last_login FROM user u
+            ORDER BY u.count_victory DESC
+            ';
+        $stmt = $conn->query($sql);
+
+        //On mets le classement dans un tableau
+        $ranking = $stmt->fetchAll();
+
+        return $ranking;
+    }*/
 
     // /**
     //  * @return User[] Returns an array of User objects

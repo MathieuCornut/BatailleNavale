@@ -126,6 +126,6 @@ class __TwigTemplate_4776a776c90fb3caf21c62e558d4cb0fdfa03b0ec3d9d9b7f00bf86a5cf
 
     <p>TODO : Rédiger les règles</p>
 </div>
-{% endblock %}", "home/rules.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/home/rules.html.twig");
+{% endblock %}", "home/rules.html.twig", "/var/www/html/batailleNavaleClean/templates/home/rules.html.twig");
     }
 }

@@ -129,6 +129,6 @@ class __TwigTemplate_c48c7bb8575a1ad05fe3a0f9885606e941e732714a011b1144011ae50f3
     TODO : Le jeu ^^'
 </div>
 {% endblock %}
-", "game/index.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/game/index.html.twig");
+", "game/index.html.twig", "/var/www/html/batailleNavaleClean/templates/game/index.html.twig");
     }
 }

@@ -132,7 +132,10 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
             // line 23
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "count_victory", [], "any", false, false, false, 23), "html", null, true);
             echo "</td>
-            <td scope=\"col\">Il y a [TODO]</td>
+            <td scope=\"col\">Il y a ";
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "last_login", [], "any", false, false, false, 24), "html", null, true);
+            echo "</td>
         </tr>
         ";
             ++$context['loop']['index0'];
@@ -171,7 +174,7 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
 
     public function getDebugInfo()
     {
-        return array (  151 => 27,  133 => 23,  127 => 22,  123 => 21,  120 => 20,  103 => 19,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  154 => 27,  137 => 24,  133 => 23,  127 => 22,  123 => 21,  120 => 20,  103 => 19,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -199,12 +202,12 @@ class __TwigTemplate_c645c7b267bc478a955fb445ec1fab2e423efb2562b55ecfc485acdc377
             <td scope=\"col\" class=\"num\">{{loop.index}}</td>
             <td scope=\"col\"><a href=\"{{ path(\"profile\", {id: player.id}) }}\">{{player.pseudo}}</a></td>
             <td scope=\"col\">{{player.count_victory}}</td>
-            <td scope=\"col\">Il y a [TODO]</td>
+            <td scope=\"col\">Il y a {{ player.last_login }}</td>
         </tr>
         {% endfor %}
     </tbody>
 </div>
 {% endblock %}
-", "ranking/ranking.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/ranking/ranking.html.twig");
+", "ranking/ranking.html.twig", "/var/www/html/batailleNavaleClean/templates/ranking/ranking.html.twig");
     }
 }

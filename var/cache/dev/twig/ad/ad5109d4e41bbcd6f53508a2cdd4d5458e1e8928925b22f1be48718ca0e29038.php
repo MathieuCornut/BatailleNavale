@@ -69,6 +69,6 @@ class __TwigTemplate_a5f7cf4ea0d8289aeda2bcf945acb247a2aa34550551e548cbd60fa4a99
     <span>Bataille Navale</span>
     <span>Mentions légales</span>
     <span>Hugo BILQUART & Mathieu CORNUT - 2019</span>
-</footer>", "footer.html.twig", "/var/www/html/batailleNavaleClean/templates/footer.html.twig");
+</footer>", "footer.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/footer.html.twig");
     }
 }

@@ -2080,6 +2080,6 @@ class __TwigTemplate_dca90b97cd6d16d47749e3c89d28905d655e0d737f2f127173c9b78fe91
         {{ tree.form_tree_details(childName, childData, forms_by_hash) }}
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/form.html.twig", "/var/www/html/batailleNavaleClean/vendor/symfony/web-profiler-bundle/Resources/views/Collector/form.html.twig");
+", "@WebProfiler/Collector/form.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/form.html.twig");
     }
 }

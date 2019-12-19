@@ -261,6 +261,6 @@ class __TwigTemplate_d40b76a848ed59c7a5e125e6f48b6db7c52a51b6ac900004f34e9a7f997
             {% endif %}
         </div>      
     </div>
-</nav>", "menu.html.twig", "/var/www/html/batailleNavaleClean/templates/menu.html.twig");
+</nav>", "menu.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/menu.html.twig");
     }
 }

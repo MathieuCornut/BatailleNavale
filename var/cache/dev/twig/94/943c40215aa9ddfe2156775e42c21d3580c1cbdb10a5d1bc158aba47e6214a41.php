@@ -909,6 +909,6 @@ class __TwigTemplate_20787170e2f9c2ffa6a28692ec4bf65e6f27948238ec02b16b2bacb52de
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/var/www/html/batailleNavaleClean/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

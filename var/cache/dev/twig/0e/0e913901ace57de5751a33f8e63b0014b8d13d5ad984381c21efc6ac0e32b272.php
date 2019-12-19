@@ -204,6 +204,6 @@ class __TwigTemplate_6f831f78957b61e4fcc795d1b28567e468a7901d42896eabe6591e19219
         })|raw }}
     </div>
 {% endif %}
-", "@Twig/Exception/trace.html.twig", "/var/www/html/batailleNavaleClean/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
     }
 }

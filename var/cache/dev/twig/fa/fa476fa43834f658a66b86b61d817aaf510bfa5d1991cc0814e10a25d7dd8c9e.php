@@ -161,6 +161,6 @@ class __TwigTemplate_a4f7449d6252573041a6c73a7c4caa31180a296ecd135ded130ef74318e
         </tr>
     </tbody>
 </table>
-", "@Twig/Exception/traces_text.html.twig", "/var/www/html/batailleNavaleClean/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
+", "@Twig/Exception/traces_text.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
     }
 }

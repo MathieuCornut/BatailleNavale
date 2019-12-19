@@ -413,6 +413,6 @@ class __TwigTemplate_000109c7a229a85c6356703fe61edd89965ece827ce3b4837df545a3a6f
 {% block body %}
     {% include '@Twig/Exception/exception.html.twig' %}
 {% endblock %}
-", "@Twig/Exception/exception_full.html.twig", "/var/www/html/batailleNavaleClean/vendor/symfony/twig-bundle/Resources/views/Exception/exception_full.html.twig");
+", "@Twig/Exception/exception_full.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/vendor/symfony/twig-bundle/Resources/views/Exception/exception_full.html.twig");
     }
 }

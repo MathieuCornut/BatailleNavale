@@ -7,23 +7,39 @@
 <div class="page-content">
     <h2>Classement</h2>
     <table class="table">
-    <thead>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nom du capitaine</th>
+                <th scope="col">Nombre de victoires</th>
+                <th scope="col">Dernière fois en ligne</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for player in classement %}
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nom du capitaine</th>
-            <th scope="col">Nombre de victoires</th>
-            <th scope="col">Dernière fois en ligne</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for player in ranking %}
-        <tr>
-            <td scope="col" class="num">{{loop.index}}</td>
+            <td scope="col" class="num">{{player.ranking}}</td>
             <td scope="col"><a href="{{ path("profile", {id: player.id}) }}">{{player.pseudo}}</a></td>
             <td scope="col">{{player.count_victory}}</td>
-            <td scope="col">Il y a {{ player.last_login }}</td>
+            <td scope="col">Il y a {{ player.last_login|date('d-m-Y à H:m:s') }}</td>
         </tr>
         {% endfor %}
-    </tbody>
+        </tbody>
+    </table>
+    <div class="pagi">
+        <ul class="pagination">
+            <li class="page-item {% if page == 1 %} disabled {% endif %}">
+                <a class="page-link" href="{{ path('ranking',{ 'page' : page - 1}) }}">Prev</a>
+            </li>
+            {% for i in 1..pages %}
+            <li class="page-item {% if page == i %} active {% endif %}">
+                <a class="page-link" href="{{ path('ranking',{'page': i}) }}">{{ i }}</a>
+            </li>
+            {% endfor %}
+            <li class="page-item {% if page == pages %} disabled {% endif %}">
+                <a class="page-link" href="{{ path('ranking',{ 'page' : page + 1}) }}">Next</a>
+            </li>
+        </ul>
+    </div> 
 </div>
 {% endblock %}

@@ -20,7 +20,7 @@ class UserRepository extends ServiceEntityRepository
         parent::__construct($registry, User::class);
     }
 
-    public function getRanking()
+    public function getPagi()
     {
         return $this->createQueryBuilder('u')
             ->select('u.id, u.pseudo,u.count_victory,u.last_login')

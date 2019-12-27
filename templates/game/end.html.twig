@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fin de la partie !{% endblock %}
+
+{% block body %}
+    <div class="page-content">
+        <div id="endgame">
+            <div id="results">
+                <h1>Resultat du combat</h1>
+                {% if game.vainqueur == app.user.pseudo %}
+                    <h2>Vous avez gagné !</h2>
+                    <img src="{{asset('images/winner.png')}}">
+                {% else %}
+                    <h2>Vous avez perdu !</h2>
+                    <img src="{{asset('images/loser.png')}}">
+                {% endif %}
+                <h3>
+                    {{game.countBateauJ1}}
+                    VS
+                    {{game.countBateauJ2}}
+                </h3>
+                |
+                    <i class="todo">TODO : Accès au logs de la partie</i>
+                |
+            </div>
+            <div id="whats-next">
+                <h2>Que voulez vous faire ?</h2>
+                <a class="btn btn-primary next" href="{{path("game")}}">Rejouer</a>
+                <a class="btn btn-secondary next" href="{{path("self_profile")}}">Retourner à votre profil</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

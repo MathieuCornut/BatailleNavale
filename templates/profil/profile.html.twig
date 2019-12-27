@@ -63,7 +63,7 @@
 
             {% for player in ranking |slice(0, 5)%}
                 {% if player.id == user.id %}
-                    <p><b>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires </b></p>                    
+                    <p id="classement-position"><b>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires </b></p>                    
                 {% else %}
                     <p>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires</p>
                 {% endif %}

@@ -197,7 +197,7 @@ class __TwigTemplate_1a1c91ad6aa4df8123a5a4f8d7ce72334da18787053da11c8a34934e25b
             echo "                ";
             if ((twig_get_attribute($this->env, $this->source, $context["player"], "id", [], "any", false, false, false, 65) == twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 65, $this->source); })()), "id", [], "any", false, false, false, 65))) {
                 // line 66
-                echo "                    <p><b>#";
+                echo "                    <p id=\"classement-position\"><b>#";
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 66), "html", null, true);
                 echo " - ";
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "pseudo", [], "any", false, false, false, 66), "html", null, true);
@@ -341,7 +341,7 @@ class __TwigTemplate_1a1c91ad6aa4df8123a5a4f8d7ce72334da18787053da11c8a34934e25b
 
             {% for player in ranking |slice(0, 5)%}
                 {% if player.id == user.id %}
-                    <p><b>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires </b></p>                    
+                    <p id=\"classement-position\"><b>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires </b></p>                    
                 {% else %}
                     <p>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires</p>
                 {% endif %}
@@ -359,6 +359,6 @@ class __TwigTemplate_1a1c91ad6aa4df8123a5a4f8d7ce72334da18787053da11c8a34934e25b
         <p>// TODO, Objet Combat, boucle for de tous les combat ou joueur 1 ou 2 = id du joueur</p>
     </div>
 </div>
-{% endblock %}", "profil/profile.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/profil/profile.html.twig");
+{% endblock %}", "profil/profile.html.twig", "/var/www/html/batailleNavaleClean/templates/profil/profile.html.twig");
     }
 }

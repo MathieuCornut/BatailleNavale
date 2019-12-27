@@ -87,9 +87,21 @@ class __TwigTemplate_c48c7bb8575a1ad05fe3a0f9885606e941e732714a011b1144011ae50f3
         // line 6
         echo "
 <div class=\"page-content\">
-    <h2>Bataille navale</h2>
+    <div id=\"game-index\">
+        <h1>Bataille navale</h1>
 
-    TODO : Le jeu ^^'
+        <div class=\"col\">
+            <a id=\"start-btn\" class=\"btn btn-primary btn-xl\" href=\"";
+        // line 12
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("start");
+        echo "\">START</a>
+
+            <p>| <i>TODO : Ecran de sélection de sa flotte</i> |</p>
+            
+            <p>| <i>TODO : Recherche d'adversaire quand combat PVP Opérationnel</i> |</p>    
+        </div>
+    </div>
+
 </div>
 ";
         
@@ -112,7 +124,7 @@ class __TwigTemplate_c48c7bb8575a1ad05fe3a0f9885606e941e732714a011b1144011ae50f3
 
     public function getDebugInfo()
     {
-        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -124,11 +136,20 @@ class __TwigTemplate_c48c7bb8575a1ad05fe3a0f9885606e941e732714a011b1144011ae50f3
 {% block body %}
 
 <div class=\"page-content\">
-    <h2>Bataille navale</h2>
+    <div id=\"game-index\">
+        <h1>Bataille navale</h1>
 
-    TODO : Le jeu ^^'
+        <div class=\"col\">
+            <a id=\"start-btn\" class=\"btn btn-primary btn-xl\" href=\"{{path('start')}}\">START</a>
+
+            <p>| <i>TODO : Ecran de sélection de sa flotte</i> |</p>
+            
+            <p>| <i>TODO : Recherche d'adversaire quand combat PVP Opérationnel</i> |</p>    
+        </div>
+    </div>
+
 </div>
 {% endblock %}
-", "game/index.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/game/index.html.twig");
+", "game/index.html.twig", "/var/www/html/batailleNavaleClean/templates/game/index.html.twig");
     }
 }

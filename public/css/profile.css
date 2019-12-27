@@ -72,6 +72,10 @@
     font-weight: bold;
 }
 
+.classement #classement-position::before {
+    content: "👤 ";
+}
+
 .classement #position {
     text-align: center;
 

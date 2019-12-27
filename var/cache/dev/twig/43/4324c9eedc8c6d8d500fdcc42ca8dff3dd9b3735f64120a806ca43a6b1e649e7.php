@@ -60,24 +60,34 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         <link rel=\"stylesheet\" href=\"/css/main.css\">
         <link rel=\"stylesheet\" href=\"/css/profile.css\">
         <link rel=\"stylesheet\" href=\"/css/ranking.css\">
+        <link rel=\"stylesheet\" href=\"/css/game.css\">
+
+        <script type=\"text/javascript\" src=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-3.4.1.min.js"), "html", null, true);
+        echo "\"></script>
+        <script type=\"text/javascript\" src=\"";
+        // line 14
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/attack.js"), "html", null, true);
+        echo "\"></script>
     </head>
     <body>
         ";
-        // line 13
+        // line 17
         echo twig_include($this->env, $context, "menu.html.twig");
         echo "
         <div class=\"container-fluid\" id=\"content\">
             ";
-        // line 15
+        // line 19
         $this->displayBlock('body', $context, $blocks);
-        // line 16
+        // line 20
         echo "            ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 19
+        // line 23
         echo "        </div>
     </body>
     ";
-        // line 21
+        // line 25
         echo twig_include($this->env, $context, "footer.html.twig");
         echo "
 </html>
@@ -127,7 +137,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     }
 
-    // line 15
+    // line 19
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -145,7 +155,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     }
 
-    // line 16
+    // line 20
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -155,7 +165,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 17
+        // line 21
         echo "            <script src=\"https://kit.fontawesome.com/5ae6b39f46.js\" crossorigin=\"anonymous\"></script>
             ";
         
@@ -178,7 +188,7 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
 
     public function getDebugInfo()
     {
-        return array (  159 => 17,  149 => 16,  131 => 15,  113 => 6,  94 => 5,  81 => 21,  77 => 19,  74 => 16,  72 => 15,  67 => 13,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  169 => 21,  159 => 20,  141 => 19,  123 => 6,  104 => 5,  91 => 25,  87 => 23,  84 => 20,  82 => 19,  77 => 17,  71 => 14,  67 => 13,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -193,6 +203,10 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
         <link rel=\"stylesheet\" href=\"/css/main.css\">
         <link rel=\"stylesheet\" href=\"/css/profile.css\">
         <link rel=\"stylesheet\" href=\"/css/ranking.css\">
+        <link rel=\"stylesheet\" href=\"/css/game.css\">
+
+        <script type=\"text/javascript\" src=\"{{ asset('js/jquery-3.4.1.min.js') }}\"></script>
+        <script type=\"text/javascript\" src=\"{{ asset('js/attack.js') }}\"></script>
     </head>
     <body>
         {{ include('menu.html.twig') }}
@@ -205,6 +219,6 @@ class __TwigTemplate_0b5cc534be2146d4fe986d958c643060c7596b519ab3e53f64b26cde25e
     </body>
     {{ include('footer.html.twig') }}
 </html>
-", "base.html.twig", "/Users/mathieucornut/Documents/BatailleNavale/templates/base.html.twig");
+", "base.html.twig", "/var/www/html/batailleNavaleClean/templates/base.html.twig");
     }
 }

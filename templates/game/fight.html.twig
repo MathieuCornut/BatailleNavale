@@ -1,0 +1,151 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Combat !{% endblock %}
+
+{% block body %}
+
+{% dump(game) %}
+{% dump(boatsJ1) %}
+{% dump(boatsJ2) %}
+
+<div class="page-content">
+    <div class="row board" id="board">
+        <div id="you" class="board-part">
+            <p {% if(game.turn == 1) %} id="turn" {% endif %}><label>{{app.user.pseudo}}</label></p>
+            {% for boat in boatsJ1 %}
+                <a data-id="{{boat.id}}" title="{{boat.id}}" class="boat-area you-boat 
+                    {% if(boat.hasAttacked == FALSE and game.turn == 1 and boat.hp > 0) %} can-attack {% endif %}
+                    {% if(boat.hp > 0 and game.turn == 0) %} alive {% endif %}">
+
+                    {% if boat.hp > 0 %}
+                        <img src="{{asset('images/sprite.png')}}" class="boat">
+                    {% else %}
+                        <img src="{{asset('images/dead_sprite.png')}}" class="boat">
+                    {% endif %}
+                    <p class="hp-bar">{{boat.hp}}</p>
+                </a>
+            {% endfor %}
+        </div>
+        <div id="opponent" class="board-part">
+            <p {% if(game.turn == 0) %} id="turn" {% endif %}><label>{{game.joueur2}}</label></p>
+            {% for boat in boatsJ2 %}
+                <a data-id="{{boat.id}}" title="{{boat.id}}" class="boat-area opponent-boat 
+                    {% if(boat.hp > 0 and game.turn == 1) %} alive {% endif %}
+                    {% if(boat.hasAttacked == FALSE and game.turn == 0 and boat.hp > 0) %} can-attack {% endif %}">
+
+                    {% if boat.hp > 0 %}
+                        <img src="{{asset('images/sprite.png')}}" class="boat">
+                    {% else %}
+                        <img src="{{asset('images/dead_sprite.png')}}" class="boat">
+                    {% endif %} 
+                    <p class="hp-bar">{{boat.hp}}</p>
+                </a>
+            {% endfor %}
+        </div>
+        <div id="logs">
+            <ul>
+                {% for log in logs %}
+                    {% if log != "" %}
+                        <li>{{log}}</li>
+                    {% endif %}
+                {% endfor %}
+                {% if game.turn == 0 %}
+                    <b>Tour de l'adversaire !</b>
+                {% elseif game.turn == 1 %}
+                    <b>A vous de jouer !</b>
+                {% endif %}
+            <ul>
+        </div>
+    </div>
+</div>
+
+{% if game.turn == 0 %}
+    <script>
+        var game = {{game.id}}; 
+        opponentAttack();
+    </script>
+{% endif %}
+
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        var game = {{game.id}};
+        
+        //Scroll automatique des logs
+        var logArea = document.getElementById("logs");
+        logArea.scrollTop = logArea.scrollHeight;
+
+        //Couleur de la barre de vie en fonction des HP
+        $hpBars = $('.hp-bar');
+        $('.hp-bar').each(function(){
+            $(this).css('width',$(this).text() + 'px');
+            if($(this).text() <= 10) {
+                $(this).css('border-color','red');
+            }
+            else if($(this).text() < 25) {
+                $(this).css('border-color','#d68400');
+            }
+            else if($(this).text() < 50) {
+                $(this).css('border-color','#ffe100');
+            }
+            else {
+                $(this).css('border-color','green');
+            }
+        });
+
+        //Clique sur un bateau allié
+        $('.can-attack').click(function(){
+            combat['attacker'] = $(this).data("id");
+
+            $('.can-attack').children().css('backgroundColor','transparent');
+            $(this).children().css('backgroundColor','cyan');
+            //console.log('Attaque avec : Bateau n°'+combat['attacker']);
+            canAttack(combat);
+        });
+
+        //Clique sur un bateau adverse
+        $('.alive').click(function(){
+            combat['target'] = $(this).data("id");
+
+            $('.alive').children().css('backgroundColor','transparent');
+            $(this).children().css('backgroundColor','red');
+
+            //console.log('Cible : Bateau n°'+combat['target']);
+            canAttack(combat);
+        });
+
+        /*function opponentAttack() {
+            console.log("L'IA va attaquer");
+            $opponentBoat = $('.can-attack');
+            $youBoat = $('.alive');
+
+            combat['attacker'] = $opponentBoat.eq(Math.floor(Math.random()*$opponentBoat.length)).data("id");
+            combat['target'] = $youBoat.eq(Math.floor(Math.random()*$youBoat.length)).data("id");
+            attack(combat);
+        }
+
+        function canAttack(combat) {
+            console.log(combat);
+            console.log("Attaque " + combat["target"] + " avec " + combat["attacker"]);
+            if(combat["attacker"] !== null && combat["target"] !== null) {
+                attack(combat);
+            }
+        }
+
+        function attack(combat) {
+            console.log("Lancement de l'attaque");
+            $.ajax({
+                url: '/game/'+game+'/attaque/'+combat['target']+'/by/'+combat['attacker'],
+                method: "post",
+                data: {
+                    id: game,
+                    attacker: combat['attacker'],
+                    target: combat['target']
+                }
+            }).done(function(){
+                location.reload();
+            });
+        }*/
+    </script>
+{% endblock %}

@@ -20,6 +20,7 @@ class UserFixture extends Fixture
     
     public function load(ObjectManager $manager) {
         $now = date_create(date('Y-m-d'));
+        $faker = Faker\Factory::create('fr_FR');
         // on créé 1 admin et 10 utilisateurs
 
         $fakeUser = new User();
@@ -30,14 +31,14 @@ class UserFixture extends Fixture
             $fakeUser,
             'aliptic87'
         ));
-        $fakeUser->setRegistrationDate($now);
+        $fakeUser->setRegistrationDate(date_create($faker->date($format = 'Y-m-d', $max = 'now')));
+        $fakeUser->setLastLogin($faker->dateTime($max = 'now', $timezone = null));
+
         $fakeUser->setCountCombat(10000);
         $fakeUser->setCountVictory(rand(0,10000));
         $manager->persist($fakeUser);
 
-        $faker = Faker\Factory::create('fr_FR');
-
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             
 
             $fakeUser = new User();
@@ -49,6 +50,7 @@ class UserFixture extends Fixture
                 'az'
             ));
             $fakeUser->setRegistrationDate($now);
+            $fakeUser->setLastLogin($faker->dateTime($max = 'now', $timezone = null));
             $fakeUser->setCountCombat(10000);
             $fakeUser->setCountVictory(rand(0,10000));
 

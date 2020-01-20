@@ -1,0 +1,152 @@
+/* INDEX */
+
+#game-index {
+    margin: auto;
+    text-align: center;
+}
+
+#game-index #start-btn {
+    margin: 2%;
+    padding: 0.5%;
+    width: 50%;
+}
+
+
+/* FIGHT */
+
+.board {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+
+.board-part {
+    width: 50%;
+
+    height: 500px;
+
+    display: inline-block;
+
+    margin: auto;
+    text-align: center;
+}
+
+#turn {
+    font-weight: bold;
+}
+
+#turn::after {
+    content: ' 🚩‍';
+    font-size: larger;
+}
+
+#you {
+    border-right: solid;
+    text-align: center;
+}
+
+#opponent {
+    border-left: solid;
+    text-align: center;
+}
+
+#board a img, #board a img{
+    cursor: url(../images/denied.cur), pointer;
+    opacity: 0.4;
+}
+
+#board a.can-attack img {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#board a.alive img {
+    cursor: url(../images/target.cur), pointer;
+    opacity: 1;
+}
+
+#opponent a img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.board-part label {
+    font-size: larger;
+
+    text-transform: uppercase;
+}
+
+.boat-area {
+    width: 120px;
+
+    padding-bottom: 10px;
+    
+    border-bottom: solid 5px green;
+}
+
+.boat {
+    position: relative;
+
+    z-index : 1;
+
+    margin: auto;
+
+    display: block;
+
+    width: 100px;
+
+    padding-bottom: 10px;
+}
+
+.hp-bar {
+    border-top: solid 5px green;
+    width: 100px;
+    margin: auto;
+}
+
+#you a.can-attack img.boat:hover {
+    background-color: cyan;
+}
+
+#opponent a.alive img.boat:hover {
+    background-color: red;
+}
+
+#logs {
+    width: 100%;
+    height:100pt;
+    overflow:auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#logs li {
+    margin: 0.5%;
+}
+
+/* END GAME */
+
+#endgame {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#endgame img {
+    width: 200px;
+    padding: 0.5%;
+}
+
+#endgame .next {
+    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#endgame div {
+    padding: 0.5%;
+}
+
+.todo {
+    text-transform: none;
+    font-size: small;
+}

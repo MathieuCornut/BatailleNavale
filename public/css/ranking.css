@@ -1,23 +1,43 @@
+/* CLASSEMENT */
+
 .table tbody tr td {
     font-size: larger;
 }
 
-.table tbody tr:first-child {
-    background-color: gold;
-    font-weight: bold;
+.first,.second,.third,.top-ten {
+    font-weight: bold; 
 }
 
-.table tbody tr:first-child .num::before {
+.table tbody .first {
+    background-color: gold;
+}
+
+.table tbody .first .pseudo {
+    text-transform: uppercase;
+}
+
+.table tbody .first .num::before {
     content: "🏆 ";
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
-.table tbody tr:nth-child(2) {
+.table tbody .second {
     background-color: silver;
-    font-weight: bold;
 }
 
-.table tbody tr:nth-child(3) {
+.table tbody .third {
     background-color: #cd7f32;
-    font-weight: bold;
+}
+
+.table tbody #you::before {
+    content: "👤 ";
+}
+
+/***************************************************************************************
+********************************* Pagination *******************************************
+****************************************************************************************/
+
+.pagi{
+    display: flex;
+    justify-content: center;
 }

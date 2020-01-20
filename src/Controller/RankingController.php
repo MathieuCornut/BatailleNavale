@@ -26,15 +26,20 @@ class RankingController extends AbstractController
 
         $_classement = [];
         for($i = $start; $i < $start + $limit; $i++){
-            array_push(
-                $_classement,
-                array_merge(
-                    $_rank[$i],
-                    array(
-                        'ranking' => $i + 1,
+            if(array_key_exists($i, $_rank) == TRUE) {
+                array_push(
+                    $_classement,
+                    array_merge(
+                        $_rank[$i],
+                        array(
+                            'ranking' => $i + 1,
+                        )
                     )
-                )
-            );
+                ); 
+            }
+            else {
+                break;
+            }     
         }
 
         return $this->render('ranking/ranking.html.twig', [

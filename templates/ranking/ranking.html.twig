@@ -16,14 +16,31 @@
             </tr>
         </thead>
         <tbody>
-        {% for player in classement %}
-        <tr>
-            <td scope="col" class="num">{{player.ranking}}</td>
-            <td scope="col"><a href="{{ path("profile", {id: player.id}) }}">{{player.pseudo}}</a></td>
-            <td scope="col">{{player.count_victory}}</td>
-            <td scope="col">Il y a {{ player.last_login|date('d-m-Y à H:m:s') }}</td>
-        </tr>
-        {% endfor %}
+            {% for player in classement %}
+                <!-- Coloration de la ligne en fonction de la position dans le classement -->
+                {% if player.ranking == 1 %}
+                <tr class="first">
+                {% elseif player.ranking == 2 %}
+                <tr class="second">
+                {% elseif player.ranking == 3 %}
+                <tr class="third">
+                {% elseif player.ranking < 11 %}
+                <tr class="top-ten">
+                {% else %}
+                <tr>
+                {% endif %}
+
+                    <!-- Affichage des informations du joueur -->
+                    <td scope="col" class="num">{{player.ranking}}</td>
+                    <td scope="col" class="pseudo">
+                        <a  {% if app.user.id == player.id %}id="you" title="Access to your profile page"{% else %}title="Access to profile page of {{player.pseudo}} "{% endif %} 
+                            href="{{ path("profile", {id: player.id}) }}">{{player.pseudo}}
+                        </a>
+                    </td>
+                    <td scope="col">{{player.count_victory}}</td>
+                    <td scope="col">{{ player.last_login|date('d F Y à H:m') }}</td>
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
     <div class="pagi">

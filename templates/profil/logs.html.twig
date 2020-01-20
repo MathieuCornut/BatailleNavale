@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="page-content"> 
+    <h2>Tout les combats de {{ info.pseudo }} - Total : {{ combats|length }}</h2>
+    <br/>
+    <ul>
+        {% for combat in combats %}
+            <li>
+                <p>
+                    {{ combat.timestamp | date('d/m/Y') }} 
+                    [<a href="{{path("logs" , {id: combat.id})}}">#{{ combat.id }}</a>] : 
+                    {{ combat.joueur1 }} contre {{ combat.joueur2 }}
+                    {% if combat.vainqueur == info.pseudo %}
+                        <span class="game-result victory">Victoire</span>
+                    {% else %}
+                        <span class="game-result defeat">Défaite</span>
+                    {% endif %}
+                </p>
+            </li>
+            <br/>
+        {% endfor %}
+    </ul>
+
+    <a class="btn btn-secondary next" href="{{path("profile" , {id: info.id})}}">Retour au profil</a>
+</div>
+{% endblock %}

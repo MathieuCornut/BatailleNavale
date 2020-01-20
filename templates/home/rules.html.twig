@@ -3,9 +3,109 @@
 {% block title %}Règles du jeu{% endblock %}
 
 {% block body %}
-<div class="page-content">
-    <h2>Règles du jeu</h2>
+<div class="page-content" id="rules">
+    <h1 class="text-center"><b><u>Comment jouer ?</u></b></h1>
+    <h2>Principe du jeu</h2>
 
-    <p>TODO : Rédiger les règles</p>
+    <p>Bienvenue capitaine ! Nous avons besoin de vous pour un nouveau combat !</p>
+
+    <p>Le jeu consiste en un jeu de combat au tour par tour</p>
+    <p>Le but du combat est simple, il faut venir à bout de la flotte adverse</p>
+
+    <br/>
+
+    <h2>Avant le combat</h2>
+
+    <p>Vous avez le choix ! Sois vous choisissez la composition de votre flotte, sois vous laissez votre équipage décider (aléatoire)</p>
+
+    <figure>
+        <img src="/images/demos/index.png" class="rules-img" alt="Page choix d'équipe">
+        <figcaption>Ecran de démarrage</figcaption>
+    </figure>
+
+    <h3>Composer votre flotte</h3>
+
+        <p>Vous avez le choix entre 4 types de bateaux</p>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/images/sprites/basique.png" class="rules-img" alt="sprite basique">
+                <br/>
+                <span>Bateau basique</span>
+                <li>Bateau de base</li>
+                <li>Aucun bonus ou pénalité d'efficacité</li>
+            </div>
+            <div class="col-md-3">
+                <img src="/images/sprites/corsaire.png" class="rules-img" alt="sprite corsaire">
+                <br/>
+                <span>Corsaire</span>
+                <li>Efficace contre les frégates</li>
+                <li>Faible contre les galions</li>
+            </div>
+            <div class="col-md-3">
+                <img src="/images/sprites/fregate.png" class="rules-img" alt="sprite fregate">
+                <br/>
+                <span>Frégate</span>
+                <li>Efficace contre les galions</li>
+                <li>Faible contre les corsaires</li>
+            </div>
+            <div class="col-md-3">
+                <img src="/images/sprites/galion.png" class="rules-img" alt="sprite galion">
+                <br/>
+                <span>Galion</span>
+                <li>Efficace contre les corsaires</li>
+                <li>Faible contre les frégates</li>
+            </div>
+        </div>
+        </br>
+
+        <p>Vous devez ensuite affecter un niveau (de 1 à 3) à vos 3 bateaux sachant que la somme des 3 niveaux ne doit pas excéder 5</p>
+
+        <figure>
+            <img src="/images/demos/tiers.png" class="rules-img-large" alt="Page création flotte tiers">
+            <figcaption>Selection du tier</figcaption>
+        </figure>
+
+
+    <p>La flotte adverse sera désignée aléatoire avec les même conditions</p>
+
+    <br/>
+
+    <h2>Le combat</h2>
+
+    <p>Quand le jeu débute, le joueur qui commence est désigné aléatoirement</p>
+
+    <p>Pour attaquer, vous devez simplement sélectionner <b class="attaquant">le bateau avec lequel vous allez attaquer</b> puis <b class="cible">celui que vous allez attaquer</b>.</p>
+
+    <figure>
+        <img src="/images/demos/fight.png" class="rules-img-large" alt="Page de combat">
+        <figcaption>Ecran de combat</figcaption>
+    </figure>
+
+    <p>Chaque bateau peut attaquer à une certaine puissance selon son niveau et son efficacité contre la cible. Celui-ci peut également faire un coup critique (dégats X 2) avec une probabilité plus ou moins élevée selon son niveau.</p>  
+    <p>La cible de l'attaque peut esquiver ou contre attaquer avec une probabilité plus ou moins élevée selon son niveau.</p> 
+
+    <p>Un bateau ne peut attaquer ou contre attaquer qu'une fois par tour</p>
+
+    <br/>
+
+    <h2>Après le combat</h2>
+
+    <p>Dès qu'un joueur à perdu tous ces bateaux, la partie se termine et le vainqueur est désigné.</p>
+
+    <p>Le nombre de bateau restant de chaque côté est également indiqué</p>
+
+    <figure>
+        <img src="/images/demos/end.png" class="rules-img-large" alt="Ecran de fin de partie">
+        <figcaption>Ecran de fin de partie</figcaption>
+    </figure>
+
+    <p>Vous pouvez commencer une nouvelle partie ou retourner à votre tableau de bord</p>
+
+    <p>Tous au long de la partie, chaque actions a été marquée dans un tableau, vous pouvez le consulter de manière détaillé en fin de partie</p>
+
+    <figure>
+        <img src="/images/demos/logs.png" class="rules-img-large" alt="Ecran de fin de partie">
+        <figcaption>Ecran des logs de la partie</figcaption>
+    </figure>
 </div>
 {% endblock %}

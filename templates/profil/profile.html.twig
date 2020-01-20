@@ -17,7 +17,12 @@
         {% endif %}
     {% endif %}
 
-    <h2><u>Votre profil</u></h2>
+    {% if user.id == app.user.id %}
+        <h2><u>Votre profil</u></h2>
+    {% else %}
+        <h2><u>Profil de {{ user.pseudo }}</u></h2>
+    {% endif %}
+    <br/>
     <div class="row">
         <table>
             <tr>
@@ -32,13 +37,15 @@
             <tr>
                 <td><p>Dernière connexion il y a {{user.lastLoginStr(user.lastLogin)}}</p></td>
             </tr>
-            <tr>
-                <td><p>Grade</p></td>
-            </tr>
         </table>
     </div>
 
+    <br/>
+
     <h2><u>Statistiques/Classement</u></h2>
+
+    <br/>
+
     <h3><u>Statistiques</u></h3>
     <div class="row">
         <div id="parties" class="stats" classement ml-4>
@@ -55,12 +62,12 @@
         </div>
     </div>
 
+    <br/>
+
     <h3><u>Classement</u></h3>
     <div class="row">
         <div id="classement_top" class="classement ml-6">
             <label>Top 5</label>
-            {% dump(ranking) %}
-
             {% for player in ranking |slice(0, 5)%}
                 {% if player.id == user.id %}
                     <p id="classement-position"><b>#{{loop.index}} - {{player.pseudo}} : {{player.count_victory}} victoires </b></p>                    
@@ -70,15 +77,55 @@
             {% endfor %}
         </div>
         <div id="classement_position" class="classement ml-6">
-            <label>Votre position dans le classement</label>
+            {% if user.id == app.user.id %}
+                <label>Votre position dans le classement</label>
+            {% else %}
+                <label>Position dans le classement</label>
+            {% endif %}
             <p id="position"><b>#{{ user.position(user,ranking) }}</b></p>
             <a href="{{ path("ranking") }}">Tableau du classement</a>
         </div>
     </div>
 
-    <h2><u>Historique de partie</u></h2>
+    <br/>
+ 
+    {% if user.id == app.user.id %}
+        <h2><u>Vos 5 derniers combats</u></h2> 
+    {% else %}
+        <h2><u>Ses 5 derniers combats</u></h2> 
+    {% endif %}
     <div class="row">
-        <p>// TODO, Objet Combat, boucle for de tous les combat ou joueur 1 ou 2 = id du joueur</p>
+        {% if combats | length == 0 %}
+            {% if user.id == app.user.id %}
+                <li>Vous n'avez pas encore combattu</li>
+            {% else %}
+                <li>Ce joueur n'a pas encore combattu</li>
+            {% endif %}
+        {% else %}
+            <ul>
+                {% for combat in combats|slice(0, 5) %}
+                    <li>
+                        <p>
+                            {{ combat.timestamp | date('d/m/Y') }} 
+                            [<a href="{{path("logs" , {id: combat.id})}}">#{{ combat.id }}</a>] : 
+                            {{ combat.joueur1 }} contre {{ combat.joueur2 }}
+                            {% if combat.vainqueur == user.pseudo %}
+                                <span class="game-result victory">Victoire</span>
+                            {% else %}
+                                <span class="game-result defeat">Défaite</span>
+                            {% endif %}
+                        </p>
+                    </li>
+                {% endfor %}
+                <li>
+                    {% if user.id == app.user.id %}
+                        <a href="{{path("player_logs" , {pseudo: user.pseudo})}}">Voir tous vos combats...</a>
+                    {% else %}
+                        <a href="{{path("player_logs" , {pseudo: user.pseudo})}}">Voir tous ses combats...</a>
+                    {% endif %}
+                </li>
+            </ul>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

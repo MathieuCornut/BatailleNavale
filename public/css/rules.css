@@ -1,0 +1,38 @@
+/***************************************************************************************
+********************************* RULES ***********************************************
+****************************************************************************************/
+
+#rules {
+    margin: auto;
+    text-align: center;
+}
+
+#rules span {
+    padding: 2%;
+}
+
+#rules h2, #rules h3, #rules p {
+    text-align: left;
+}
+
+img.rules-img {
+    margin: auto;
+    height: 200px;
+
+    border: solid 1px;
+}
+
+img.rules-img-large {
+    margin: auto;
+    height: 400px;
+
+    border: solid 1px;
+}
+
+b.attaquant {
+    color: steelblue;
+}  
+
+b.cible {
+    color: crimson;
+}

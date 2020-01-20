@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-static-top">
     <div class="container">
 
-        <div class="collapse navbar-collapse text-center" id="welcome">
+        <div class="collapse navbar-collapse row align-items-center" id="welcome">
             {% if app.user is null %}
                 <h1>Bienvenue à bord !</h1>
             {% else %}
@@ -22,13 +22,11 @@
                             <a class="nav-link" href="{{ path('self_profile') }}">Profil</a>
                         </h2>
                     </li>
-
                     <li class="nav-item {% if app.request.get('_route') == 'ranking' %}active{% endif %}">
                         <h2>
                             <a class="nav-link" href="{{ path('ranking') }}">Classement</a>
                         </h2>
                     </li>
-
                     <li class="nav-item {% if app.request.get('_route') == 'game' %}active{% endif %}">
                         <h2>
                             <a class="nav-link" href="{{ path('game') }}">Jouer</a>
@@ -43,9 +41,9 @@
                     {% endif %}
                 {% endif %}
             </ul>
-        </div>
+        
 
-        <div class="form-inline my-2 my-lg-0  text-center" id="boutons">
+        <div class="form-inline my-2 my-lg-0  " id="boutons">
             {% if app.user is null %}
                 <a class="btn btn-danger ml-3" href="{{ path('app_login') }}">
                     Se connecter
@@ -58,6 +56,7 @@
                     Se déconnecter
                 </a>
             {% endif %}
-        </div>      
+        </div>
+        </div>   
     </div>
 </nav>

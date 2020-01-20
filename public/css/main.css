@@ -5,6 +5,7 @@
 body {
     position: relative;
     color:black;
+    background-color: rgba(0, 0, 0, 0.5);
     background-image:url(/images/Galion.jpg);
     background-repeat:no-repeat;
     background-position:center center;
@@ -27,11 +28,16 @@ body {
 
 #content {
     background-color: rgba(0, 0, 0, 0.5);
+    background-position:center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height:auto;
 }
 
 .page-content {
     padding: 2%;
     width: 80%;
+    height:auto;
     margin: auto;
 
     background-color: rgba(255, 255, 255, 0.8);
@@ -103,8 +109,10 @@ body {
     background-image:url(/images/9.jpg);
     border-bottom: solid 5px #7b8084;
     color: gold;
+    display: flex;
+    justify-content: space-around;
 }
-.nav-item {
+li {
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -119,4 +127,43 @@ body {
 }
 #menu {
     text-align: center;
+} 
+
+/***************************************************************************************
+********************************* RULES ***********************************************
+****************************************************************************************/
+
+#rules {
+    margin: auto;
+    text-align: center;
+}
+
+#rules span {
+    padding: 2%;
+}
+
+#rules h2, #rules h3, #rules p {
+    text-align: left;
+}
+
+img.rules-img {
+    margin: auto;
+    height: 200px;
+
+    border: solid 1px;
+}
+
+img.rules-img-large {
+    margin: auto;
+    height: 400px;
+
+    border: solid 1px;
+}
+
+b.attaquant {
+    color: steelblue;
+}  
+
+b.cible {
+    color: crimson;
 }

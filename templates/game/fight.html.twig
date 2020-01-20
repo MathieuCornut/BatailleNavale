@@ -8,17 +8,19 @@
 {% dump(boatsJ1) %}
 {% dump(boatsJ2) %}
 
+{% set tierAlpha = ['un', 'deux', 'trois'] %}
+
 <div class="page-content">
     <div class="row board" id="board">
         <div id="you" class="board-part">
             <p {% if(game.turn == 1) %} id="turn" {% endif %}><label>{{app.user.pseudo}}</label></p>
             {% for boat in boatsJ1 %}
-                <a data-id="{{boat.id}}" title="{{boat.id}}" class="boat-area you-boat 
+                <a data-id="{{boat.id}}" title="{{boat.type}} T{{boat.tier}}" class="boat-area you-boat tier-{{tierAlpha[boat.tier - 1]}}
                     {% if(boat.hasAttacked == FALSE and game.turn == 1 and boat.hp > 0) %} can-attack {% endif %}
                     {% if(boat.hp > 0 and game.turn == 0) %} alive {% endif %}">
 
                     {% if boat.hp > 0 %}
-                        <img src="{{asset('images/sprite.png')}}" class="boat">
+                        <img src="{{asset('images/sprites/'~boat.type~'.png')}}" class="boat tier{{boat.tier}}">
                     {% else %}
                         <img src="{{asset('images/dead_sprite.png')}}" class="boat">
                     {% endif %}
@@ -29,12 +31,12 @@
         <div id="opponent" class="board-part">
             <p {% if(game.turn == 0) %} id="turn" {% endif %}><label>{{game.joueur2}}</label></p>
             {% for boat in boatsJ2 %}
-                <a data-id="{{boat.id}}" title="{{boat.id}}" class="boat-area opponent-boat 
+                <a data-id="{{boat.id}}" title="{{boat.type}} T{{boat.tier}}" class="boat-area opponent-boat
                     {% if(boat.hp > 0 and game.turn == 1) %} alive {% endif %}
                     {% if(boat.hasAttacked == FALSE and game.turn == 0 and boat.hp > 0) %} can-attack {% endif %}">
 
                     {% if boat.hp > 0 %}
-                        <img src="{{asset('images/sprite.png')}}" class="boat">
+                        <img src="{{asset('images/sprites/'~boat.type~'.png')}}" class="boat tier{{boat.tier}}">
                     {% else %}
                         <img src="{{asset('images/dead_sprite.png')}}" class="boat">
                     {% endif %} 
@@ -46,7 +48,9 @@
             <ul>
                 {% for log in logs %}
                     {% if log != "" %}
-                        <li>{{log}}</li>
+                        <li>
+                            <p>{{log}}</p>
+                        </li>
                     {% endif %}
                 {% endfor %}
                 {% if game.turn == 0 %}
@@ -56,6 +60,7 @@
                 {% endif %}
             <ul>
         </div>
+        <!--i>TODO : Rajouter des icones et une légende aux lignes de log</i-->
     </div>
 </div>
 
@@ -83,7 +88,7 @@
             if($(this).text() <= 10) {
                 $(this).css('border-color','red');
             }
-            else if($(this).text() < 25) {
+            else if($(this).text() < 20) {
                 $(this).css('border-color','#d68400');
             }
             else if($(this).text() < 50) {
@@ -98,8 +103,8 @@
         $('.can-attack').click(function(){
             combat['attacker'] = $(this).data("id");
 
-            $('.can-attack').children().css('backgroundColor','transparent');
-            $(this).children().css('backgroundColor','cyan');
+            $('.can-attack').children().css('filter',''); 
+            $(this).children().css('filter','drop-shadow(0 0 1rem cyan)'); 
             //console.log('Attaque avec : Bateau n°'+combat['attacker']);
             canAttack(combat);
         });
@@ -108,8 +113,8 @@
         $('.alive').click(function(){
             combat['target'] = $(this).data("id");
 
-            $('.alive').children().css('backgroundColor','transparent');
-            $(this).children().css('backgroundColor','red');
+            $('.alive').children().css('filter',''); 
+            $(this).children().css('filter','drop-shadow(0 0 1rem red)'); 
 
             //console.log('Cible : Bateau n°'+combat['target']);
             canAttack(combat);

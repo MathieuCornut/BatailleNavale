@@ -11,6 +11,10 @@
     width: 50%;
 }
 
+#start-btn i {
+    font-size: xx-small;
+}
+
 
 /* FIGHT */
 
@@ -93,9 +97,21 @@
 
     display: block;
 
-    width: 100px;
+    height: 120px;
 
     padding-bottom: 10px;
+}
+
+.tier-un {
+    filter: '';
+}
+
+.tier-deux {
+    filter: drop-shadow(0 0 0.25rem yellow);
+}
+
+.tier-trois {
+    filter: drop-shadow(0 0 1rem gold);
 }
 
 .hp-bar {
@@ -105,11 +121,11 @@
 }
 
 #you a.can-attack img.boat:hover {
-    background-color: cyan;
+    filter: drop-shadow(0 0 1rem cyan);
 }
 
 #opponent a.alive img.boat:hover {
-    background-color: red;
+    filter: drop-shadow(0 0 1rem red);
 }
 
 #logs {
@@ -134,6 +150,7 @@
 #endgame img {
     width: 200px;
     padding: 0.5%;
+    filter: drop-shadow(0 0 0.5rem gold);
 }
 
 #endgame .next {
@@ -150,3 +167,106 @@
     text-transform: none;
     font-size: small;
 }
+
+/* LOGS SCREEN */
+
+#legende {
+    list-style-type: none;
+}
+
+#legende li {
+    float: left;
+    font-size: medium;
+}
+
+ul#log-list {
+    padding: 2%;
+    list-style-type: none;
+}
+
+p.start, p.passage-tour, p.destruction {
+    font-weight: bold;
+}
+
+p.start::before {
+    content : '⚔️';
+    font-size: larger;
+}
+
+li.start {
+    list-style-type: none;
+}
+
+p.passage-tour::before {
+    content : '🚩 ';
+}
+
+li.passage-tour {
+    list-style-type: none;
+}
+
+li.player-action {
+    list-style-type : '👤';
+}
+
+li.ia-action {
+    list-style-type : '🖥️ '
+}
+
+p.destruction::before {
+    content : ' 💀 '
+}
+
+p.destruction {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px crimson;
+}
+
+p.attack::before {
+    content : ' 💥 '
+}
+
+p.counterattack::before {
+    content : ' 💣 '
+}
+
+
+/* */
+
+
+/* CREER EQUIPE */
+
+div.disabled {
+    opacity: 0.4;
+}
+
+div.disabled img.create-team-icon {
+    opacity: 1;
+}
+
+img.create-team-img {
+    height: 200px;
+}
+
+img.create-team-icon {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    opacity: 1;
+}
+
+img.tier1 {
+    filter: ;
+}
+
+img.tier2 {
+    filter: drop-shadow(0 0 0.5rem #cd7f32);
+}
+
+img.tier3 {
+    filter: drop-shadow(0 0 1rem gold);
+}
+
+/* */

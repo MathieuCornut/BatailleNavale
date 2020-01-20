@@ -1,0 +1,122 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="page-content"> 
+        <h1>Creez votre flotte !</h1>
+
+        <div class="row" style="margin: auto;">
+            <div class="col-md-4 text-center create-team-bateau" id="bateau1">
+                <h3>1er bateau</h3>
+                <img src="/images/sprites/basique.png" class="create-team-img">
+                <br/>
+
+                <label>Type de bateau</label>
+                <select class="form-control text-center type-bateau">
+                    <option value="basique">Basique</option>
+                    <option value="corsaire">Corsaire</option>
+                    <option value="fregate">Frégate</option>
+                    <option value="galion">Galion</option>
+                </select>
+
+                <label>Niveau</label>
+                <select class="form-control text-center niveau-bateau">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="col-md-4 text-center create-team-bateau" id="bateau2">
+                <h3>2ème bateau</h3>
+                <img src="/images/sprites/basique.png" class="create-team-img">
+                <br/>
+
+                <label>Type de bateau</label>
+                <select class="form-control text-center type-bateau">
+                    <option value="basique">Basique</option>
+                    <option value="corsaire">Corsaire</option>
+                    <option value="fregate">Frégate</option>
+                    <option value="galion">Galion</option>
+                </select>
+
+                <label>Niveau</label>
+                <select class="form-control text-center niveau-bateau">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="col-md-4 text-center create-team-bateau" id="bateau3">
+                <h3>3eme bateau</h3>
+                <img src="/images/sprites/basique.png" class="create-team-img">
+                <br/>
+
+                <label>Type de bateau</label>
+                <select class="form-control text-center type-bateau">
+                    <option value="basique">Basique</option>
+                    <option value="corsaire">Corsaire</option>
+                    <option value="fregate">Frégate</option>
+                    <option value="galion">Galion</option>
+                </select>
+
+                <label>Niveau</label>
+                <select class="form-control text-center niveau-bateau">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-primary" id="define">
+                    Définir l'équipe
+                </button>
+            </div>
+
+            <div id="erreur" class="col-md-12 text-center">
+
+            </div>
+
+            <p class="indications">La somme des niveaux de bateau de la flotte ne doit pas dépasser 5</p>
+        </div>
+    </div>
+
+    <script>
+        $('select').prop('selectedIndex',0);
+
+        $('.type-bateau').change(function(){
+            $newSrc = '/images/sprites/' + $(this).val() + '.png';
+            $(this).parent().find('img').attr('src',$newSrc);
+        });
+
+        $('.niveau-bateau').change(function(){
+            $(this).parent().find('img').removeClass( "tier1 tier2 tier3" ).addClass("tier" + $(this).val());
+
+            $( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" );
+        });
+
+        $('#define').click(function(){
+
+            $niveau1 = Number($('#bateau1 > .niveau-bateau').val());
+
+            $niveau2 = Number($('#bateau2 > .niveau-bateau').val());
+
+            $niveau3 = Number($('#bateau3 > .niveau-bateau').val())
+            
+            $sumLvl = $niveau1 + $niveau2 + $niveau3;
+            
+            if($sumLvl > 5) {
+                document.getElementById('erreur').innerHTML = "La somme des niveaux des bateaux de la flotte dépasse 5";
+            }
+            else {
+
+                var team = $('#bateau1 > .type-bateau').val() + ',' + $niveau1 + ',' + $('#bateau2 > .type-bateau').val() + ',' + $niveau2 + ',' + $('#bateau3 > .type-bateau').val() + ',' + $niveau3;
+
+                //var team = $niveau1 + ',' + $('#bateau1 > .type-bateau').val() + ',' + $niveau2 + ',' + $('#bateau2 > .type-bateau').val() + ',' + $niveau3 + ',' + $('#bateau3 > .type-bateau');
+
+                window.location.href = '/game/start/' + team;
+            }          
+        });
+    </script>
+{% endblock %}

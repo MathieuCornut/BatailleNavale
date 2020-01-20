@@ -9,11 +9,9 @@
         <h1>Bataille navale</h1>
 
         <div class="col">
-            <a id="start-btn" class="btn btn-primary btn-xl" href="{{path('start')}}">START</a>
+            <a id="start-btn" class="btn btn-primary btn-xl" href="{{path('team')}}">Commencer <i>choisir votre flotte</i></a>
 
-            <p>| <i>TODO : Ecran de sélection de sa flotte</i> |</p>
-            
-            <p>| <i>TODO : Recherche d'adversaire quand combat PVP Opérationnel</i> |</p>    
+            <a id="start-btn" class="btn btn-primary btn-xl" href="{{path("start" , {data: 'random'})}}">START <i>flotte aléatoire</i></a>  
         </div>
     </div>
 

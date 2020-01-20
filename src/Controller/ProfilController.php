@@ -33,6 +33,7 @@ class ProfilController extends AbstractController
     public function self_profile()
     {
         $conn = $this->getDoctrine()->getManager()->getConnection();
+        $user = $this->getUser();
 
         $sql = '
             SELECT id,pseudo,count_victory FROM user u
@@ -40,11 +41,20 @@ class ProfilController extends AbstractController
             ';
         $stmt = $conn->query($sql);
 
+        $sql_combats = '
+            SELECT * FROM combat c
+            WHERE joueur1 = "'.$user->getPseudo().'" OR joueur2 = "'.$user->getPseudo().
+            '" ORDER BY c.timestamp DESC
+        ';
+        $stmt_combat = $conn->query($sql_combats);
+        $combats = $stmt_combat->fetchAll();
+
         // returns an array of arrays (i.e. a raw data set)
         $ranking = $stmt->fetchAll();
         
         return $this->render('profil/profile.html.twig', [
-            'ranking' => $ranking
+            'ranking' => $ranking,
+            'combats' => $combats
         ]);
     }
 
@@ -60,13 +70,43 @@ class ProfilController extends AbstractController
             ORDER BY u.count_victory DESC
             ';
         $stmt = $conn->query($sql);
+        
+        $sql_combats = '
+            SELECT * FROM combat c
+            WHERE joueur1 = "'.$user->getPseudo().'" OR joueur2 = "'.$user->getPseudo().
+            '" ORDER BY c.timestamp DESC
+        ';
+        $stmt_combat = $conn->query($sql_combats);
+        $combats = $stmt_combat->fetchAll();
 
         // returns an array of arrays (i.e. a raw data set)
         $ranking = $stmt->fetchAll();
         
         return $this->render('profil/profile.html.twig', [
             'info' => $user,
-            'ranking' => $ranking
+            'ranking' => $ranking,
+            'combats' => $combats
+        ]);
+    }
+
+    /**
+     * @Route("/logs/player/{pseudo}", name="player_logs")
+     */
+    public function logs(User $user)
+    {
+        $conn = $this->getDoctrine()->getManager()->getConnection();
+
+        $sql_combats = '
+            SELECT * FROM combat c
+            WHERE joueur1 = "'.$user->getPseudo().'" OR joueur2 = "'.$user->getPseudo().
+            '" ORDER BY c.timestamp DESC
+        ';
+        $stmt_combat = $conn->query($sql_combats);
+        $combats = $stmt_combat->fetchAll();
+
+        return $this->render('profil/logs.html.twig', [
+            'info' => $user,
+            'combats' => $combats
         ]);
     }
 }

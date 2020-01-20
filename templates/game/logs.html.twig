@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Logs de la partie{% endblock %}
+
+{% block body %}
+
+{% dump(logs) %}
+    <div class="page-content">
+        {% if game.status != 2 %}
+            <h2>La partie que vous essayez de consulter n'existe pas ou n'est pas terminée</h2>
+        {% else %}
+            <h2>Déroulement de la partie</h2>
+            <p>#{{ game.id }} - <b>{{ game.joueur1 }}</b> VS {{ game.joueur2 }}</p>
+
+            <h4>Légende</h4>
+            <ul id="legende">
+                <li>
+                    🚩 : Passage de tour
+                </li>
+                <li>
+                    💥 : Attaque
+                </li>
+                <li>
+                    💣 : Contre-attaque
+                </li>
+                <li>
+                    💀 : Bateau détruit
+                </li>
+
+                <li>
+                    👤 : Action du joueur
+                </li>
+                <li>
+                    🖥️ : Action de l'IA
+                </li>
+            </ul>
+            <br/>
+            <div>
+                <ul id="log-list">
+                    {% for log in logs %}
+                        {% set classes = '' %}
+                        {% set classTurn = '' %}
+
+                        {% if 'Début' in log %}
+                            {% set classes = " start " ~ classes %}
+                            {% set classTurn = " start " ~ classes %}
+                        {% endif %}
+
+                        {% if 'JOUEUR :' in log %}
+                            {% set classTurn = " player-action " %}
+                        {% endif %}
+
+                        {% if 'IA :' in log %}
+                            {% set classTurn = " ia-action " %}
+                        {% endif %}
+
+
+
+                        {% if 'Attaque du' in log %}
+                            {% if 'MORT' in log %}
+                                {% set classes = " destruction " ~ classes %}
+                            {% else %}
+                                {% set classes = " attack " ~ classes %}
+                            {% endif %}
+                        {% endif %}
+
+                        {% if 'Contre attaque du' in log %}
+                            {% if 'MORT' in log %}
+                                {% set classes = " destruction " ~ classes %}
+                            {% else %}
+                                {% set classes = " counterattack " ~ classes %}
+                            {% endif %}
+                        {% endif %}
+
+                        {% if 'Tour' in log %}
+                            {% set classes = " passage-tour " ~ classes %}
+                            {% set classTurn = " passage-tour " ~ classes %}
+                        {% endif %}
+                        <li class="{{ classTurn }}">
+                            <p class="{{ classes }}">{{ log }}</p>
+                        </li>
+                    {% endfor %}
+                    <li>
+                        <p>FIN DE LA PARTIE : {{ game.vainqueur }} remporte le combat !</p>
+                    </li>
+
+                    {% dump(app.user) %}
+                    {% if game.vainqueur == app.user.pseudo %}
+                        <span class="text-center">🎇 Vous avez gagné !</span>
+                    {% else %}
+                        <span class="text-center">💀 Vous avez perdu !</span>
+                    {% endif %}
+                </ul>
+            </div>
+
+        {% endif %}
+    </div>
+{% endblock %}

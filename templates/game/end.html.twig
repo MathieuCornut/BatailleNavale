@@ -19,13 +19,11 @@
                     VS
                     {{game.countBateauJ2}}
                 </h3>
-                |
-                    <i class="todo">TODO : Accès au logs de la partie</i>
-                |
             </div>
             <div id="whats-next">
                 <h2>Que voulez vous faire ?</h2>
                 <a class="btn btn-primary next" href="{{path("game")}}">Rejouer</a>
+                <a class="btn btn-secondary next" href="{{path("logs" , {id: game.id})}}">Consulter le déroulement de la partie</a>
                 <a class="btn btn-secondary next" href="{{path("self_profile")}}">Retourner à votre profil</a>
             </div>
         </div>
